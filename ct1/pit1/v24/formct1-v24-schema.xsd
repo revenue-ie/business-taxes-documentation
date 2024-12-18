@@ -173,9 +173,98 @@ iv-OtherCodes
 	[new attributes]
 	@suspicioussuspend
 	
+ix- Company Details 
+	[new attribute]
+	@surrenderLossesConfirmation
+	@claimLossesConfirmation
 
-
+	- GroupForIrishTaxPurposes
+	[new attributes]
+	@AddDetailsSurrenderedLossList	
+	@surrenderOfLossesNamePpsn
+	@amtSurrendered
+	@natureOfRelief
+	@clause_1_Activity
+	@clause_2_Activity1
+	@clause_2_Activity2
+	@clause_3_Activity
+	@clause_4_Activity1
+	@clause_4_Activity2
+	@clause_4_Activity3
 	
+	@AddDetailsClaimedLosses	
+	@claimToLossNamePpsn
+	@amtClaimed
+	@natureOfRelief
+	@clause_1_Activity
+	@clause_2_Activity1
+	@clause_2_Activity2
+	@clause_3_Activity
+	@clause_4_Activity1
+	@clause_4_Activity2
+	@clause_4_Activity3
+	
+x - IrishInvestmentAndOtherIncome - LeasingProfits
+	[new attributes]
+	@caArisingFromNonTradingActivity
+	@caForwardFromPriorAP
+	@caArisingThisAP
+	@wearAndTearAmount
+	@totalBalancingAmount
+	@caUtilisedInAP
+	@unusedCAToCarryForward	
+	
+xi- LaclClaimDetails - Company Details
+	@laclNamePpsn
+	@claimConfirmation
+	@isLesseeTaxResident
+	@countryOfResidenceOfParent
+	@associateEnterprise
+	@marketValueOfLeasedAssets
+	@leaseIncome
+	@actualLeasePayment
+	@capitalAllowance
+	@totalClaimed
+	@claimButton
+	@leaseIncomeCheckbox
+
+xi- LacLessorsClaimDetails - Company Details
+	@lacLessorsNamePpsn
+	@claimConfirmation
+	@isLessorTaxResident
+	@countryOfResidenceOfParent
+	@associateEnterprise
+	@marketValueOfLeasedAssets
+	@leasePayment
+	@actualLeasePayable
+	@capitalAllowance
+	@totalClaimed
+	@claimButton
+	@totalCapitalExpenditure	
+
+	xii - IrishInvestmentAndOtherIncome - DigitalGamesRelief - DigitalGamesReliefUnderS481A19
+	[new attributes]
+	@isTreatedAsOverpaymentSec960H
+	@treatedAsOverpaymentSec960HAmt
+	@isPaidByRevenue
+	@paidByRevenueAmt
+	@treatedAsOverpaymentOffset
+	@accountingPeriodBegin
+	@accountingPeriodEnd
+	
+	xii - IrishInvestmentAndOtherIncome - DigitalGamesRelief - DigitalGamesReliefUnderS481A20
+	[new attributes]
+	@isTreatedAsOverpaymentSec960H
+	@treatedAsOverpaymentSec960HAmt
+	@isPaidByRevenue
+	@paidByRevenueAmt
+	@treatedAsOverpaymentOffset
+	
+	xiii- Company Details 
+	[new attribute]
+	@deMinimisAidCheckBox
+	@deMinimisAidConfirmationText
+	@grossGrantDMA
 	
 -->
 
@@ -565,6 +654,22 @@ iv-OtherCodes
 									<xsd:attribute name="qualifingAssets" type="boolean" use="optional"/>
 								</xsd:complexType>
 							</xsd:element>
+							<xsd:element name="AddDetailsSurrenderedLossList" minOccurs="0" maxOccurs="100">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="surrenderOfLossesNamePpsn" type="NameAndCTTaxRefNumber" minOccurs="0"/>
+									</xsd:sequence>
+									<xsd:attribute name="natureOfRelief" type="text40" use="optional"/>
+									<xsd:attribute name="amtSurrendered" type="euros16" use="optional"/>
+									<xsd:attribute name="clause_1_Activity" type="boolean" use="optional"/>
+									<xsd:attribute name="clause_2_Activity1" type="boolean" use="optional"/>
+									<xsd:attribute name="clause_2_Activity2" type="boolean" use="optional"/>
+									<xsd:attribute name="clause_3_Activity" type="boolean" use="optional"/>
+									<xsd:attribute name="clause_4_Activity1" type="boolean" use="optional"/>
+									<xsd:attribute name="clause_4_Activity2" type="boolean" use="optional"/>
+									<xsd:attribute name="clause_4_Activity3" type="boolean" use="optional"/>
+								</xsd:complexType>
+							</xsd:element>
 							<xsd:element name="ClaimToLosses" minOccurs="0" maxOccurs="100">
 								<xsd:complexType>
 									<xsd:sequence>
@@ -575,11 +680,63 @@ iv-OtherCodes
 									<xsd:attribute name="qualifingAssets" type="boolean" use="optional"/>
 								</xsd:complexType>
 							</xsd:element>
+							<xsd:element name="AddDetailsClaimedLoss" minOccurs="0" maxOccurs="100">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="claimToLossesNamePpsn" type="NameAndCTTaxRefNumber" minOccurs="0"/>
+									</xsd:sequence>
+									<xsd:attribute name="natureOfRelief" type="text40" use="optional"/>
+									<xsd:attribute name="amtClaimed" type="euros16" use="optional"/>
+									<xsd:attribute name="clause_1_Activity" type="boolean" use="optional"/>
+									<xsd:attribute name="clause_2_Activity1" type="boolean" use="optional"/>
+									<xsd:attribute name="clause_2_Activity2" type="boolean" use="optional"/>
+									<xsd:attribute name="clause_3_Activity" type="boolean" use="optional"/>
+									<xsd:attribute name="clause_4_Activity1" type="boolean" use="optional"/>
+									<xsd:attribute name="clause_4_Activity2" type="boolean" use="optional"/>
+									<xsd:attribute name="clause_4_Activity3" type="boolean" use="optional"/>
+								</xsd:complexType>
+							</xsd:element>
 							<xsd:element name="ParentNameAndPpsn" type="NameAndCTTaxRefNumber" minOccurs="0"/>
 						</xsd:sequence>
 						<xsd:attribute name="parentCountryOfResidence" type="integer12" use="optional"/>
 					</xsd:complexType>
 				</xsd:element>
+				<xsd:element name="LaclClaimDetails" minOccurs="0" maxOccurs="50">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="laclNamePpsn" type="NameAndCTTaxRefNumber" minOccurs="0"/>
+						</xsd:sequence>
+						<xsd:attribute name="claimConfirmation" type="boolean" use="optional"/>
+						<xsd:attribute name="isLesseeTaxResident" type="boolean" use="optional"/>
+						<xsd:attribute name="countryOfResidenceOfParent" type="text40" use="optional"/>
+						<xsd:attribute name="associateEnterprise" type="boolean" use="optional"/>
+						<xsd:attribute name="marketValueOfLeasedAssets" type="euros16" use="optional"/>
+						<xsd:attribute name="leaseIncome" type="euros16" use="optional"/>
+						<xsd:attribute name="actualLeasePayment" type="euros16" use="optional"/>
+						<xsd:attribute name="capitalAllowance" type="euros16" use="optional"/>
+						<xsd:attribute name="totalClaimed" type="euros16" use="optional"/>
+						<xsd:attribute name="claimButton" type="boolean" use="optional"/>
+						<xsd:attribute name="leaseIncomeCheckbox" type="boolean" use="optional"/>
+					</xsd:complexType>
+				</xsd:element>		
+				<xsd:element name="LacLessorsClaimDetails" minOccurs="0" maxOccurs="50">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="lacLessorsNamePpsn" type="NameAndCTTaxRefNumber" minOccurs="0"/>
+						</xsd:sequence>
+						<xsd:attribute name="claimConfirmation" type="boolean" use="optional"/>
+						<xsd:attribute name="isLessorTaxResident" type="boolean" use="optional"/>
+						<xsd:attribute name="countryOfResidenceOfParent" type="text40" use="optional"/>
+						<xsd:attribute name="associateEnterprise" type="boolean" use="optional"/>
+						<xsd:attribute name="marketValueOfLeasedAssets" type="euros16" use="optional"/>
+						<xsd:attribute name="leasePayment" type="euros16" use="optional"/>
+						<xsd:attribute name="actualLeasePayable" type="euros16" use="optional"/>
+						<xsd:attribute name="capitalAllowance" type="euros16" use="optional"/>
+						<xsd:attribute name="totalCapitalExpenditure" type="euros16" use="optional"/>
+						<xsd:attribute name="totalClaimed" type="euros16" use="optional"/>
+						<xsd:attribute name="claimButton" type="boolean" use="optional"/>
+					</xsd:complexType>
+				</xsd:element>							
 				<xsd:element name="CompanyNameAndPpsn" type="NameAndCTTaxRefNumber" minOccurs="0"/>
 				<xsd:element name="ExemptionFromTax" minOccurs="0">
 					<xsd:complexType>
@@ -627,7 +784,7 @@ iv-OtherCodes
 						<xsd:attribute name="withheldamount" type="positiveDec8" use="optional"/>
 						<xsd:attribute name="country" type="integer12" use="optional" />
 						<xsd:attribute name="explanation" type="integer12" use="optional" />
-						<xsd:attribute name="explanationdetails" type="text20" use="optional" default="false"/>
+						<xsd:attribute name="explanationdetails" type="text20" use="optional" />
 					</xsd:complexType>
 				</xsd:element>
 				<xsd:element name="OutboundPayments" minOccurs="0" maxOccurs="200">
@@ -638,7 +795,7 @@ iv-OtherCodes
 						<xsd:attribute name="withheldamount" type="positiveDec8" use="optional"/>
 						<xsd:attribute name="country" type="integer12" use="optional" />
 						<xsd:attribute name="explanation" type="integer12" use="optional" />
-						<xsd:attribute name="explanationdetails" type="text20" use="optional" default="false"/>
+						<xsd:attribute name="explanationdetails" type="text20" use="optional"/>
 					</xsd:complexType>
 				</xsd:element>
 			</xsd:sequence>
@@ -660,6 +817,12 @@ iv-OtherCodes
 			<xsd:attribute name="amtTax" type="euros16" use="optional"/>
 			<xsd:attribute name="containValuesInExcess" type="boolean" use="optional" default="false"/>
 			<xsd:attribute name="partofMultiGrp" type="boolean" use="optional"/>
+			<xsd:attribute name="surrenderLossesConfirmation" type="boolean" use="optional"/>
+			<xsd:attribute name="claimLossesConfirmation" type="boolean" use="optional"/>
+			<xsd:attribute name="deMinimisAidCheckBox" type="boolean" use="optional"/>
+			<xsd:attribute name="deMinimisAidConfirmationText" type="text40" use="optional"/>
+			<xsd:attribute name="grossGrantDMA" type="euros16" use="optional"/>
+			
 		</xsd:complexType>
 	</xsd:element>
 	<xsd:element name="TradingResults">
@@ -1158,6 +1321,13 @@ iv-OtherCodes
 				<xsd:element name="leasingProfits" minOccurs="0">
 					<xsd:complexType>
 						<xsd:attribute name="profitsFromNonTradingLeasing" type="euros16" use="optional"/>
+						<xsd:attribute name="caArisingFromNonTradingActivity" type="boolean" use="optional"/>
+						<xsd:attribute name="caForwardFromPriorAP" type="euros16" use="optional"/>
+						<xsd:attribute name="caArisingThisAP" type="euros16" use="optional"/>
+						<xsd:attribute name="wearAndTearAmount" type="euros16" use="optional"/>
+						<xsd:attribute name="totalBalancingAmount" type="euros16" use="optional"/>
+						<xsd:attribute name="caUtilisedInAP" type="euros16" use="optional"/>
+						<xsd:attribute name="unusedCAToCarryForward" type="euros16" use="optional"/>
 					</xsd:complexType>
 				</xsd:element>
 				<xsd:element name="PatentRights" minOccurs="0">
@@ -1192,6 +1362,11 @@ iv-OtherCodes
 									<xsd:attribute name="interimTaxCreditClaimedPreviousYears" type="euros16" use="optional"/>
 									<xsd:attribute name="interimTaxClaimedAt32" type="euros16" use="optional"/>
 									<xsd:attribute name="isClaimBeingMadeSinceDateSec481A" type="boolean" use="optional"/>
+									<xsd:attribute name="isTreatedAsOverpaymentSec960H" type="boolean" use="optional"/>
+									<xsd:attribute name="treatedAsOverpaymentSec960HAmt" type="euros16" use="optional"/>
+									<xsd:attribute name="isPaidByRevenue" type="boolean" use="optional"/>
+									<xsd:attribute name="paidByRevenueAmt" type="euros16" use="optional"/>
+									<xsd:attribute name="treatedAsOverpaymentOffset" type="euros16" use="optional"/>
 								</xsd:complexType>
 							</xsd:element>
 							<xsd:element name="DigitalGamesReliefUnderS481A20" minOccurs="0" maxOccurs="40">
@@ -1200,11 +1375,18 @@ iv-OtherCodes
 									<xsd:attribute name="finalCulturalCertNumber" type="text20" use="optional"/>
 									<xsd:attribute name="certDateIssued" type="date" use="optional"/>
 									<xsd:attribute name="dateOfCompletion" type="date" use="optional"/>
+									<xsd:attribute name="accountingPeriodBegin" type="date" use="optional"/>
+									<xsd:attribute name="accountingPeriodEnd" type="date" use="optional"/>
 									<xsd:attribute name="eligibleExpenditure" type="euros16" use="optional"/>
 									<xsd:attribute name="qualiffyingExpenditure" type="euros16" use="optional"/>
 									<xsd:attribute name="interimTaxCreditClaimedPreviousYears" type="euros16" use="optional"/>
 									<xsd:attribute name="isClaimBeingMadeSinceDateSec481A" type="boolean" use="optional"/>
 									<xsd:attribute name="interimTaxClaimedAt32" type="euros16" use="optional"/>
+									<xsd:attribute name="isTreatedAsOverpaymentSec960H" type="boolean" use="optional"/>
+									<xsd:attribute name="treatedAsOverpaymentSec960HAmt" type="euros16" use="optional"/>
+									<xsd:attribute name="isPaidByRevenue" type="boolean" use="optional"/>
+									<xsd:attribute name="paidByRevenueAmt" type="euros16" use="optional"/>
+									<xsd:attribute name="treatedAsOverpaymentOffset" type="euros16" use="optional"/>
 								</xsd:complexType>
 							</xsd:element>
 							<xsd:element name="ClawbackGamesReliefS481A26" minOccurs="0">
@@ -1975,6 +2157,8 @@ iv-OtherCodes
 			<xsd:attribute name="patentRights" type="euros16" use="optional"/>
 			<xsd:attribute name="amtRandDTaxOffset" type="euros16" use="optional"/>
 			<xsd:attribute name="amtRandDTaxCredit" type="euros16" use="optional"/>
+			<xsd:attribute name="digitalGamesTaxOffset" type="euros16" use="optional"/>
+			<xsd:attribute name="digitalGamesTaxCredit" type="euros16" use="optional"/>
 		</xsd:complexType>
 	</xsd:element>
 
@@ -2068,6 +2252,10 @@ iv-OtherCodes
 			<xsd:attribute name="cceAmtRandDTaxCredit" type="itpsigneddecimal12" use="optional"/>
 			<xsd:attribute name="selfAmtRandDTaxOffset" type="itpsigneddecimal12" use="optional"/>
 			<xsd:attribute name="selfAmtRandDTaxCredit" type="itpsigneddecimal12" use="optional"/>
+			<xsd:attribute name="cceDigitalGamesOffset" type="itpsigneddecimal12" use="optional"/>
+			<xsd:attribute name="cceDigitalGamesCredit" type="itpsigneddecimal12" use="optional"/>
+			<xsd:attribute name="selfDigitalGamesOffset" type="itpsigneddecimal12" use="optional"/>
+			<xsd:attribute name="selfDigitalGamesCredit" type="itpsigneddecimal12" use="optional"/>
 		</xsd:complexType>
 	</xsd:element>
 	<xsd:element name="SelfAssessmentCgtIt">
