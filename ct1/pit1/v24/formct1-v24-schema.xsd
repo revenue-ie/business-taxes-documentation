@@ -177,6 +177,9 @@ ix- Company Details
 	[new attribute]
 	@surrenderLossesConfirmation
 	@claimLossesConfirmation
+	@deMinimisAidCheckBox
+	@deMinimisAidConfirmationText
+	@grossGrantDMA
 
 	- GroupForIrishTaxPurposes
 	[new attributes]
@@ -242,7 +245,9 @@ xi- LacLessorsClaimDetails - Company Details
 	@claimButton
 	@totalCapitalExpenditure	
 
-	xii - IrishInvestmentAndOtherIncome - DigitalGamesRelief - DigitalGamesReliefUnderS481A19
+	
+	
+xii - IrishInvestment - DigitalGamesRelief - DigitalGamesReliefUnderS481A19
 	[new attributes]
 	@isTreatedAsOverpaymentSec960H
 	@treatedAsOverpaymentSec960HAmt
@@ -252,7 +257,7 @@ xi- LacLessorsClaimDetails - Company Details
 	@accountingPeriodBegin
 	@accountingPeriodEnd
 	
-	xii - IrishInvestmentAndOtherIncome - DigitalGamesRelief - DigitalGamesReliefUnderS481A20
+xiii - IrishInvestment - DigitalGamesRelief - DigitalGamesReliefUnderS481A20
 	[new attributes]
 	@isTreatedAsOverpaymentSec960H
 	@treatedAsOverpaymentSec960HAmt
@@ -260,12 +265,58 @@ xi- LacLessorsClaimDetails - Company Details
 	@paidByRevenueAmt
 	@treatedAsOverpaymentOffset
 	
-	xiii- Company Details 
-	[new attribute]
-	@deMinimisAidCheckBox
-	@deMinimisAidConfirmationText
-	@grossGrantDMA
+xiv - IrishInvestment
+	[new element]
+	++QualifyingFinancingCompanies
+	[new attributes]
+	@incomeUnmatchedLoanAmt
+	@grossQualifyingCompanyIncome
+	@netQualifyingCompanyIncome
 	
+	[new element]
+	++QualifyingFinancingCompaniesList
+	[new attributes]
+	@isQualiCompanySec766E
+	@loanRecipientName
+	@oanRecipientTaxNumber
+	@loanRecipientCountry
+	@loanPrincipalAmt
+	@loanBalancelAmt
+	@loanInterestDeductible
+	
+	[new element]
+	++Recipient
+	[new attributes]
+	@externalLenderName
+	@externalTaxNumber
+	@externalCountry
+	@externalLoanPrincipalAmt
+	@externalLoanBalancelAmt
+	@externalLoanInterestDeductible
+	
+	
+
+
+Xv - CapitalGainsConsiderations
+	[New Attributes]
+	@confirmPlantAndMachinery
+	@numberOfDisposals
+	@netGainOrLoss
+	@totalProfitsOrLosses	
+	
+xv1 - CompanyDetails
+[new element]
+LeaseAgreedS299
+[new attributes]
+@hasCompanyMadeElectionS299
+@numberOfLeasesElectionMade
+@associateEnterprise
+@totalLeaseIncome
+@isLeaseIncomeFromTrade
+@totalAcutalLeaseIncome
+@totalOpenMarketValue
+@capitalAllowanceForegone
+
 -->
 
 <xsd:schema xmlns="http://www.ros.ie/schemas/formct1/v24/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.ros.ie/schemas/formct1/v24/" elementFormDefault="qualified" attributeFormDefault="unqualified">
@@ -735,6 +786,18 @@ xi- LacLessorsClaimDetails - Company Details
 						<xsd:attribute name="totalCapitalExpenditure" type="euros16" use="optional"/>
 						<xsd:attribute name="totalClaimed" type="euros16" use="optional"/>
 						<xsd:attribute name="claimButton" type="boolean" use="optional"/>
+					</xsd:complexType>
+				</xsd:element>							
+				<xsd:element name="LeaseAgreedS299" minOccurs="0" >
+					<xsd:complexType>
+						<xsd:attribute name="hasCompanyMadeElectionS299" type="boolean" use="optional"/>
+						<xsd:attribute name="numberOfLeasesElectionMade" type="euros16" use="optional"/>
+						<xsd:attribute name="associateEnterprise" type="boolean" use="optional"/>
+						<xsd:attribute name="totalLeaseIncome" type="euros16" use="optional"/>
+						<xsd:attribute name="isLeaseIncomeFromTrade" type="boolean" use="optional"/>
+						<xsd:attribute name="totalAcutalLeaseIncome" type="euros16" use="optional"/>
+						<xsd:attribute name="totalOpenMarketValue" type="euros16" use="optional"/>
+						<xsd:attribute name="capitalAllowanceForegone" type="euros16" use="optional"/>
 					</xsd:complexType>
 				</xsd:element>							
 				<xsd:element name="CompanyNameAndPpsn" type="NameAndCTTaxRefNumber" minOccurs="0"/>
@@ -1403,6 +1466,38 @@ xi- LacLessorsClaimDetails - Company Details
 								</xsd:complexType>
 							</xsd:element>
 						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="QualifyingFinancingCompanies" minOccurs="0">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="QualifyingFinancingCompaniesList" minOccurs="0" maxOccurs="40">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="Recipient" minOccurs="0" maxOccurs="40">
+											<xsd:complexType>
+												<xsd:attribute name="externalLenderName" type="text20" use="optional"/>
+												<xsd:attribute name="externalTaxNumber" type="text20" use="optional"/>
+												<xsd:attribute name="externalCountry" type="integer12" use="optional"/>
+												<xsd:attribute name="externalLoanPrincipalAmt" type="euros16" use="optional"/>
+												<xsd:attribute name="externalLoanBalancelAmt" type="euros16" use="optional"/>
+												<xsd:attribute name="externalLoanInterestDeductible" type="euros16" use="optional"/>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+									<xsd:attribute name="isQualiCompanySec766E" type="boolean" use="optional"/>
+									<xsd:attribute name="loanRecipientName" type="text20" use="optional"/>
+									<xsd:attribute name="loanRecipientTaxNumber" type="text20" use="optional"/>
+									<xsd:attribute name="loanRecipientCountry" type="integer12" use="optional"/>
+									<xsd:attribute name="loanPrincipalAmt" type="euros16" use="optional"/>
+									<xsd:attribute name="loanBalancelAmt" type="euros16" use="optional"/>
+									<xsd:attribute name="loanInterestDeductible" type="euros16" use="optional"/>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+						<xsd:attribute name="incomeUnmatchedLoanAmt" type="euros16" use="optional"/>
+						<xsd:attribute name="grossQualifyingCompanyIncome" type="euros16" use="optional"/>
+						<xsd:attribute name="netQualifyingCompanyIncome" type="euros16" use="optional"/>
 					</xsd:complexType>
 				</xsd:element>
 			</xsd:sequence>
@@ -2640,6 +2735,10 @@ xi- LacLessorsClaimDetails - Company Details
 		<xsd:attribute name="totalConsiderOnDisposal" type="euros16" use="optional"/>
 		<xsd:attribute name="incidentalCostOfDisposal" type="euros16" use="optional"/>
 		<xsd:attribute name="aggNetConsiderOnDisposal" type="euros16" use="optional"/>
+		<xsd:attribute name="confirmPlantAndMachinery" type="boolean" use="optional"/>
+		<xsd:attribute name="numberOfDisposals" type="euros16" use="optional"/>
+		<xsd:attribute name="netGainOrLoss" type="integer12" use="optional"/>
+		<xsd:attribute name="totalProfitsOrLosses" type="integer12" use="optional"/>
 	</xsd:complexType>
 
 	<xsd:complexType name="LivingCityInit">

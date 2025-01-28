@@ -10,7 +10,7 @@
 				"anchor": "CT1_Schema_v24",
 				"type": "Schema",
 				"environment": "Tax periods ending in 2024",
-				"dateLastUpdated": "17/12/2024",
+				"dateLastUpdated": "28/01/2025",
 				"category": "download"
 			},
 			{
@@ -19,7 +19,7 @@
 				"anchor": "CT1_Notes_v24",
 				"type": "PDF",
 				"environment": "Tax periods ending in 2024",
-				"dateLastUpdated": "17/12/2024",
+				"dateLastUpdated": "28/01/2025",
 				"category": "download"
 			},
 			{
@@ -412,7 +412,7 @@
 				"anchor": "Form11_Schema_v25",
 				"type": "Schema",
 				"environment": "Tax periods ending in 2024",
-				"dateLastUpdated": "21/11/2024",
+				"dateLastUpdated": "28/01/2025",
 				"category": "download"
 			},
 			{
@@ -421,7 +421,7 @@
 				"anchor": "Form11_Notes_v25",
 				"type": "PDF",
 				"environment": "Tax periods ending in 2024",
-				"dateLastUpdated": "21/11/2024",
+				"dateLastUpdated": "28/01/2025",
 				"category": "download"
 			},
 			{
