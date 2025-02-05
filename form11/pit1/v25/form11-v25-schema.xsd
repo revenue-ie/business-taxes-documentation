@@ -4,6 +4,8 @@
 Document History:
 __________________________________________________________
 
+new elements
+
 added new section on Personal Details panel - De Minimis- EU State Aid
 @dmaCheckbox
 @dmaPreviousYearAid
@@ -28,6 +30,24 @@ Rental > RentIncomeRRPRInfo
 @grantValueSpouse
 @netCredit
 @netCreditSpouse
+
+Rental > ResidentialPremisesRentalIncomeRelief
+@residentialPremisesSelf
+@residentialPremisesSpouse
+@residentialPremisesSelf2
+@residentialPremisesSpouse2
+@residentialPremisesSelf3
+@residentialPremisesSpouse3
+@lptPropertyIdSelf
+@lptPropertyIdSpouse
+@netRentalIncomeSelf
+@netRentalIncomeSpouse
+@ownershipPercentageSelf
+@ownershipPercentageSpouse
+@availableReliefSelf
+@availableReliefSpouse
+@cappedReliefSelf
+@cappedReliefSpouse
 
 removed elements
 Allowances > HRIClaims
