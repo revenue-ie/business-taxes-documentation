@@ -6,6 +6,10 @@ __________________________________________________________
 
 new elements
 
+Expenses > FlatRateType
+@flatratetype
+
+
 added new section on Personal Details panel - De Minimis- EU State Aid
 @dmaCheckbox
 @dmaPreviousYearAid
@@ -667,7 +671,7 @@ Prepopulation > HRIDetails
 						<xsd:attribute name="cappedReliefSpouse" type="ros:positive8" use="optional"/>
 					</xsd:complexType>
 				</xsd:element>
-				
+
 				<xsd:element name="RentIncomeRRPRInfo" minOccurs="0">
 					<xsd:complexType>
 						<xsd:sequence>
@@ -776,6 +780,14 @@ Prepopulation > HRIDetails
 						<xsd:sequence>
 							<xsd:element name="Expenses" minOccurs="0">
 								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="FlatRateType" minOccurs="0" maxOccurs="250">
+											<xsd:complexType>
+												<xsd:attribute name="flatrateself" type="ros:positive8" use="optional"/>
+												<xsd:attribute name="flatratespouse" type="ros:positive8" use="optional"/>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
 									<xsd:attribute name="natureofemploymentself" type="ros:string40" use="optional"/>
 									<xsd:attribute name="natureofemploymentspouse" type="ros:string40" use="optional"/>
 									<xsd:attribute name="flatexpensesself" type="ros:positive8" use="optional"/>
@@ -4403,13 +4415,13 @@ Prepopulation > HRIDetails
 		</xsd:sequence>
 		<xsd:attribute name="s97Confirmation" type="ros:boolean" />
 	</xsd:complexType>
-	
+
 	<xsd:complexType name="RentIncomeRRPRInfo">
 		<xsd:sequence>
 			<xsd:element name="RentIncomeRRPRInfoList" type= "RentIncomeRRPRInfoList" minOccurs="0" maxOccurs="2" />
 		</xsd:sequence>
 	</xsd:complexType>
-	
+
 	<xsd:complexType name="RentIncomeRRPRInfoList">
 		<xsd:attribute name="registrationConfirm" type="ros:boolean" use="optional"/>
 		<xsd:attribute name="registrationConfirmSpouse" type="ros:boolean" use="optional"/>
