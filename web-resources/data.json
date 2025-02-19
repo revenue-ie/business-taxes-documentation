@@ -828,6 +828,24 @@
 		"cardText": "<p>This section provides documentation which advises users on the available schema & notes for each available version of Form1-Firms",
 		"cards": [
 			{
+				"link": "form1firms/pit1/v25/form1firms-v25-schema.xsd",
+				"description": "Form1-Firms Schema v25",
+				"anchor": "Form1-Firms_Schema_v25",
+				"type": "Schema",
+				"environment": "Tax periods ending in 2024",
+				"dateLastUpdated": "19/02/2025",
+				"category": "download"
+			},
+			{
+				"link": "form1firms/pit1/v24/form1firmsv24notes.pdf",
+				"description": "Form1-Firms Notes v25",
+				"anchor": "Form1-Firms_Notes_v25",
+				"type": "PDF",
+				"environment": "Tax periods ending in 2024",
+				"dateLastUpdated": "19/02/2025",
+				"category": "download"
+			},
+			{
 				"link": "form1firms/pit1/v24/form1firms-v24-schema.xsd",
 				"description": "Form1-Firms Schema v24",
 				"anchor": "Form1-Firms_Schema_v24",
@@ -1158,6 +1176,24 @@
 		"anchor": "PIT",
 		"cardText": "<p>This section provides documentation which advises users on the available schema & notes for each available version of Form1-Trusts & Estates",
 		"cards": [
+			{
+				"link": "form1/pit1/v18/form1-v18-schema.xsd",
+				"description": "Form1 Schema v18",
+				"anchor": "Form1_Schema_v18",
+				"type": "Schema",
+				"environment": "Tax periods ending in 2024",
+				"dateLastUpdated": "19/02/2025",
+				"category": "download"
+			},
+			{
+				"link": "form1/pit1/v18/form1v18notes.pdf",
+				"description": "Form1 Notes v18",
+				"anchor": "Form1_Notes_v18",
+				"type": "PDF",
+				"environment": "Tax periods ending in 2024",
+				"dateLastUpdated": "19/02/2025",
+				"category": "download"
+			},
 			{
 				"link": "form1/pit1/v17/form1-v17-schema.xsd",
 				"description": "Form1 Schema v17",
