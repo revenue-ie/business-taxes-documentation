@@ -6,6 +6,21 @@ __________________________________________________________
 
 new elements
 
+Trade> IndividualLessees>
+@jointelection
+@numofleases
+@lessorsassociatedenterprise
+@deductibleleasepayments
+@actualleasepayments
+@deemedcapitalexpenditure
+@capitalallowancesperiod
+
+Trade> TradeCapital>
+@farmbuildingsamt
+@slurrystorageamta
+@slurrystorageamtb
+
+
 Expenses > FlatRateType
 @flatratetype
 
@@ -408,6 +423,9 @@ Prepopulation > HRIDetails
 						<xsd:attribute name="energyefficientequipment" type="ros:positive8" use="optional"/>
 						<xsd:attribute name="farmnitrates" type="ros:positive8" use="optional"/>
 						<xsd:attribute name="industrial" type="ros:positive8" use="optional"/>
+						<xsd:attribute name="farmbuildingsamt" type="ros:positive8" use="optional"/>
+						<xsd:attribute name="slurrystorageamta" type="ros:positive8" use="optional"/>
+						<xsd:attribute name="slurrystorageamtb" type="ros:positive8" use="optional"/>
 						<xsd:attribute name="other" type="ros:positive8" use="optional"/>
 						<xsd:attribute name="addunused" type="ros:positive8" use="optional"/>
 						<xsd:attribute name="propertyincentive" type="ros:boolean" default="false"/>
@@ -431,6 +449,17 @@ Prepopulation > HRIDetails
 						<xsd:attribute name="taxpayloss" type="ros:positive8" use="optional"/>
 						<xsd:attribute name="specreliefcap" type="ros:positive8" use="optional"/>
 						<xsd:attribute name="otherspecreliefcap" type="ros:positive8" use="optional"/>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="IndividualLessees" minOccurs="0">
+					<xsd:complexType>
+						<xsd:attribute name="jointelection" type="ros:boolean" default="false"/>
+						<xsd:attribute name="numofleases" type="ros:positive8" use="optional"/>
+						<xsd:attribute name="lessorsassociatedenterprise" type="ros:positive4" use="optional"/>
+						<xsd:attribute name="deductibleleasepayments" type="ros:positive8" use="optional"/>
+						<xsd:attribute name="actualleasepayments" type="ros:positive8" use="optional"/>
+						<xsd:attribute name="deemedcapitalexpenditure" type="ros:positive8" use="optional"/>
+						<xsd:attribute name="capitalallowancesperiod" type="ros:positive8" use="optional"/>
 					</xsd:complexType>
 				</xsd:element>
 				<xsd:element name="PSWT" minOccurs="0">
