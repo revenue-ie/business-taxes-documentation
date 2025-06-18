@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 
+<!--
 
 Document History:
 __________________________________________________________
+REMOVED
+@plantAndMachineryExcessNotClaimed
 
-	
+Trading Reesults [added Elements] START
+	@amntWearTearAllowancesSec403
+	@totalBalancingAllowancesSec403
+	@amntWearTearAllowancesSec404
+	@totalBalancingAllowancesSec404
+	@totalSpecifiedCapAllowances
+
+	@relevantLeasingLosesCheckBox
+	@relevantLeasingCarriedForward
+	@relevantLeasingArising
+	@relevantLeasingUtilised
+	@relevantLeasingNotUsed
+
+	@lossesArisingCheckBox
+	@amtLossesCarriedForward
+	@amtLossesArising
+	@amtLossesUtilised
+	@amtLossesNotUsed
+Trading Reesults [added Elements] END
 i-RecoveryOfIncomeTax
 	[added Element]
 	countryWithoutDeduction
@@ -2760,7 +2780,14 @@ Xviii - ForeignIncome
 			<xsd:enumeration value="na"/>
 		</xsd:restriction>
 	</xsd:simpleType>
-	
+	<xsd:simpleType name="bigDecimalNegPos">
+		<xsd:restriction base="xsd:decimal">
+			<xsd:totalDigits value="15"/>
+			<xsd:fractionDigits value="2"/>
+			<xsd:minInclusive value="-999999999999999"/>
+			<xsd:maxInclusive value="999999999999999"/>
+		</xsd:restriction>
+	</xsd:simpleType>
 	<xsd:complexType name="PositiveNegativeAmount">
 		<xsd:attribute name="positiveAmount" type="euros16" use="optional"/>
 		<xsd:attribute name="negativeAmount" type="euros16" use="optional"/>
@@ -2954,6 +2981,23 @@ Xviii - ForeignIncome
 		<xsd:attribute name="farmBuildAllowSlurrySec658A2b" type="euros16" use="optional"/>
 		<xsd:attribute name="totalCrssAndBrss" type="euros16" use="optional"/>
 		<xsd:attribute name="totalCreditClaimed" type="euros16" use="optional"/>
+		<xsd:attribute name="amntWearTearAllowancesSec403" type="bigDecimalNegPos" use="optional"/>
+		<xsd:attribute name="totalBalancingAllowancesSec403" type="bigDecimalNegPos" use="optional"/>
+		<xsd:attribute name="amntWearTearAllowancesSec404" type="bigDecimalNegPos" use="optional"/>
+		<xsd:attribute name="totalBalancingAllowancesSec404" type="bigDecimalNegPos" use="optional"/>
+		<xsd:attribute name="totalSpecifiedCapAllowances" type="bigDecimalNegPos" use="optional"/>
+		<xsd:attribute name="relevantLeasingLosesCheckBox" type="boolean" use="optional"/>
+		<xsd:attribute name="relevantLeasingCarriedForward" type="euros12" use="optional"/>
+		<xsd:attribute name="relevantLeasingArising" type="euros12" use="optional"/>
+		<xsd:attribute name="relevantLeasingUtilised" type="euros12" use="optional"/>
+		<xsd:attribute name="relevantLeasingNotUsed" type="euros12" use="optional"/>
+		<xsd:attribute name="lossesArisingCheckBox" type="boolean" use="optional"/>
+		<xsd:attribute name="amtLossesCarriedForward" type="euros12" use="optional"/>
+		<xsd:attribute name="amtLossesArising" type="euros12" use="optional"/>
+		<xsd:attribute name="amtLossesUtilised" type="euros12" use="optional"/>
+		<xsd:attribute name="amtLossesNotUsed" type="euros12" use="optional"/>
+
+
 	</xsd:complexType>
 
 	<xsd:complexType name="QualifyingAssetsClaims">
