@@ -20,10 +20,8 @@ Trade> TradeCapital>
 @slurrystorageamta
 @slurrystorageamtb
 
-
-Expenses > FlatRateType
-@flatratetype
-
+Paye> Pensions > Expenses >
+FlatRateType > @flatratetype
 
 added new section on Personal Details panel - De Minimis- EU State Aid
 @dmaCheckbox
@@ -50,24 +48,6 @@ Rental > RentIncomeRRPRInfo
 @netCredit
 @netCreditSpouse
 
-Rental > ResidentialPremisesRentalIncomeRelief
-@residentialPremisesSelf
-@residentialPremisesSpouse
-@residentialPremisesSelf2
-@residentialPremisesSpouse2
-@residentialPremisesSelf3
-@residentialPremisesSpouse3
-@lptPropertyIdSelf
-@lptPropertyIdSpouse
-@netRentalIncomeSelf
-@netRentalIncomeSpouse
-@ownershipPercentageSelf
-@ownershipPercentageSpouse
-@availableReliefSelf
-@availableReliefSpouse
-@cappedReliefSelf
-@cappedReliefSpouse
-
 removed elements
 Allowances > HRIClaims
 @hriCarriedForwardSelf
@@ -83,6 +63,46 @@ Prepopulation > HRIDetails
 @paymentAmount
 @claimDate
 @hriCarriedForwardSelfAmount
+
+Added additional subsection/fields on De Minimis- EU State Aid
+@aicrCheckbox;
+@aicrSection372AAC;
+@aicrSection372AAD;
+@aicrSection286N;
+@aicrSection216F;
+@aicrSection667C;
+@genDeMinAid;
+@agriDeMinAid;
+@fishAndAquaAid;
+@genEconomicInterestAid;
+
+Added Deduction Amount column/fields for Self on Sure panel
+@deductionAmountPercentSelf
+@deductionFiftyPercentSelf
+@deductionEightySevenPercentSelf
+@deductionHundredTwentyFivePercentSelf
+@deductionFromTotalAmountSelf
+@deductionAmtoneyearsbeforeself
+@deductionAmttwoyearsbeforeself
+@deductionAmtthreeyearsbeforeself
+@deductionAmtfouryearsbeforeself
+@deductionAmtfiveyearsbeforeself
+@deductionAmtsixyearsbeforeself
+@deductionAmttobecarriedfwself
+
+Added Deduction Amount column/fields  for Spouse on Sure panel
+@deductionAmountPercentSpouse
+@deductionFiftyPercentSpouse
+@deductionEightySevenPercentSpouse
+@deductionHundredTwentyFivePercentSpouse
+@deductionFromTotalAmountSpouse
+@deductionAmtoneyearsbeforeSpouse
+@deductionAmttwoyearsbeforeSpouse
+@deductionAmtthreeyearsbeforeSpouse
+@deductionAmtfouryearsbeforeSpouse
+@deductionAmtfiveyearsbeforeSpouse
+@deductionAmtsixyearsbeforeSpouse
+@deductionAmttobecarriedfwSpouse
 -->
 
 <xsd:schema xmlns:ros="http://www.ros.ie/schemas/rostypes/" xmlns="http://www.ros.ie/schemas/form11/v25/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.ros.ie/schemas/form11/v25/" elementFormDefault="qualified" attributeFormDefault="unqualified">
@@ -151,6 +171,16 @@ Prepopulation > HRIDetails
 						<xsd:attribute name="dmaCheckbox" type="ros:boolean" use="optional"/>
 						<xsd:attribute name="dmaPreviousYearAid" type="xsd:decimal" use="optional"/>
 						<xsd:attribute name="dmaGrossGrant" type="xsd:decimal" use="optional"/>
+						<xsd:attribute name="aicrCheckbox" type="ros:boolean" use="optional"/>
+						<xsd:attribute name="aicrSection372AAC" type="xsd:decimal" use="optional"/>
+						<xsd:attribute name="aicrSection372AAD" type="xsd:decimal" use="optional"/>
+						<xsd:attribute name="aicrSection286N" type="xsd:decimal" use="optional"/>
+						<xsd:attribute name="aicrSection216F" type="xsd:decimal" use="optional"/>
+						<xsd:attribute name="aicrSection667C" type="xsd:decimal" use="optional"/>
+						<xsd:attribute name="genDeMinAid" type="xsd:decimal" use="optional"/>
+						<xsd:attribute name="agriDeMinAid" type="xsd:decimal" use="optional"/>
+						<xsd:attribute name="fishAndAquaAid" type="xsd:decimal" use="optional"/>
+						<xsd:attribute name="genEconomicInterestAid" type="xsd:decimal" use="optional"/>
 					</xsd:complexType>
 				</xsd:element>
 				<xsd:element name="Reason">
@@ -703,9 +733,9 @@ Prepopulation > HRIDetails
 
 				<xsd:element name="RentIncomeRRPRInfo" minOccurs="0">
 					<xsd:complexType>
-						<xsd:sequence>
+					<xsd:sequence>
 							<xsd:element name="RentIncomeRRPRInfo" type="RentIncomeRRPRInfo" minOccurs="0" maxOccurs="1"/>
-						</xsd:sequence>
+					</xsd:sequence>
 					</xsd:complexType>
 				</xsd:element>
 			</xsd:sequence>
@@ -1903,6 +1933,31 @@ Prepopulation > HRIDetails
 						<xsd:attribute name="amttobecarriedfwspouse" type="ros:positive8" use="optional" />
 						<xsd:attribute name="amtinvestedprevself" type="ros:positive8" use="optional" />
 						<xsd:attribute name="amtinvestedprevspouse" type="ros:positive8" use="optional" />
+						<xsd:attribute name="deductionAmountPercentSelf" type="xsd:decimal" use="optional" />
+						<xsd:attribute name="deductionFiftyPercentSelf" type="ros:positive8" use="optional" />
+						<xsd:attribute name="deductionEightySevenPercentSelf" type="ros:positive8" use="optional" />
+						<xsd:attribute name="deductionHundredTwentyFivePercentSelf" type="ros:positive8" use="optional" />
+						<xsd:attribute name="deductionFromTotalAmountSelf" type="ros:positive8" use="optional" />
+						<xsd:attribute name="deductionAmtoneyearsbeforeself" type="ros:positive8" use="optional" />
+						<xsd:attribute name="deductionAmttwoyearsbeforeself" type="ros:positive8" use="optional" />
+						<xsd:attribute name="deductionAmtthreeyearsbeforeself" type="ros:positive8" use="optional" />
+						<xsd:attribute name="deductionAmtfouryearsbeforeself" type="ros:positive8" use="optional" />
+						<xsd:attribute name="deductionAmtfiveyearsbeforeself" type="ros:positive8" use="optional" />
+						<xsd:attribute name="deductionAmtsixyearsbeforeself" type="ros:positive8" use="optional" />
+						<xsd:attribute name="deductionAmttobecarriedfwself" type="ros:positive8" use="optional" />
+						<xsd:attribute name="deductionAmountPercentSpouse" type="ros:positive8" use="optional" />
+						<xsd:attribute name="deductionFiftyPercentSpouse" type="ros:positive8" use="optional" />
+						<xsd:attribute name="deductionEightySevenPercentSpouse" type="ros:positive8" use="optional" />
+						<xsd:attribute name="deductionHundredTwentyFivePercentSpouse" type="ros:positive8" use="optional" />
+						<xsd:attribute name="deductionFromTotalAmountSpouse" type="ros:positive8" use="optional" />
+						<xsd:attribute name="deductionAmtoneyearsbeforespouse" type="ros:positive8" use="optional" />
+						<xsd:attribute name="deductionAmttwoyearsbeforespouse" type="ros:positive8" use="optional" />
+						<xsd:attribute name="deductionAmtthreeyearsbeforespouse" type="ros:positive8" use="optional" />
+						<xsd:attribute name="deductionAmtfouryearsbeforespouse" type="ros:positive8" use="optional" />
+						<xsd:attribute name="deductionAmtfiveyearsbeforespouse" type="ros:positive8" use="optional" />
+						<xsd:attribute name="deductionAmtsixyearsbeforespouse" type="ros:positive8" use="optional" />
+						<xsd:attribute name="deductionAmttobecarriedfwspouse" type="ros:positive8" use="optional" />
+						
 					</xsd:complexType>
 				</xsd:element>
 				<xsd:element name="EiiAllowance" minOccurs="0">
@@ -3552,6 +3607,12 @@ Prepopulation > HRIDetails
 				<xsd:element name="TaxableIncome" minOccurs="0">
 					<xsd:complexType>
 						<xsd:sequence>
+							<xsd:element name="CappedRelief" minOccurs="0">
+								<xsd:complexType>
+									<xsd:attribute name="amount" type="xsd:integer" use="optional"/>
+									<xsd:attribute name="spouse" type="xsd:integer" use="optional"/>
+								</xsd:complexType>
+							</xsd:element>
 							<xsd:element name="ChargedAs" minOccurs="0" maxOccurs="7">
 								<xsd:complexType>
 									<xsd:complexContent>
@@ -4460,6 +4521,8 @@ Prepopulation > HRIDetails
 		<xsd:attribute name="lptIDSpouse" type="ros:string40" use="optional"/>
 		<xsd:attribute name="vatID" type="ros:string40" use="optional"/>
 		<xsd:attribute name="vatIDSpouse" type="ros:string40" use="optional"/>
+		<xsd:attribute name="eircode" type="ros:string40" use="optional"/>
+		<xsd:attribute name="eircodeSpouse" type="ros:string40" use="optional"/>
 		<xsd:attribute name="netRentalIncome" type="ros:positive9" use="optional"/>
 		<xsd:attribute name="netRentalIncomeSpouse" type="ros:positive9" use="optional"/>
 		<xsd:attribute name="percentageOfOwner" type="ros:positive9" use="optional"/>
