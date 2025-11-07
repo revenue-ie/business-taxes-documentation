@@ -422,15 +422,33 @@
 	"Form11": {
 		"title": "Form11 - Schema & Notes",
 		"anchor": "PIT",
-		"cardText": "<p>This section provides documentation which advises users on the available schema & notes for each available version of Form11",
+		"cardText": "<p>This section provides documentation which advises users on the available schema & notes for each available version of Form11. In order to aid third party development and integration work, we have made a provisional XML schema available for the Form 11 2025 marked with (“Currently In Development”). Please be advised that this schema is currently in development and is intended for initial guidance and testing purposes only. As the schema is not yet final, its structure and elements are subject to change prior to the official release.",
 		"cards": [
-			{
+          {
+            "link": "form11/pit1/v26/form11-v26-schema.xsd",
+            "description": "Form11 Schema v26– (Currently In Development)",
+            "anchor": "Form11_Schema_v26",
+            "type": "Schema",
+            "environment": "Tax periods ending in 2025",
+            "dateLastUpdated": "07/11/2025",
+            "category": "download"
+          },
+          {
+            "link": "form11/pit1/v26/form11v26notes.pdf",
+            "description": "Form11 Notes v26- (Currently in Development)",
+            "anchor": "Form11_Notes_v26",
+            "type": "PDF",
+            "environment": "Tax periods ending in 2025",
+            "dateLastUpdated": "07/11/2025",
+            "category": "download"
+          },
+          {
 				"link": "form11/pit1/v25/form11-v25-schema.xsd",
 				"description": "Form11 Schema v25",
 				"anchor": "Form11_Schema_v25",
 				"type": "Schema",
 				"environment": "Tax periods ending in 2024",
-				"dateLastUpdated": "09/07/2025",
+				"dateLastUpdated": "22/08/2025",
 				"category": "download"
 			},
 			{
