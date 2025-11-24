@@ -29,6 +29,18 @@ SelfAssessmentCGT
 @selfdefertaxcgt
 @selfdefertaxnowpayablecgt
 
+UkForeign > SplitYearTreatment
+@claimingsplityeartreatmentthisyearself
+@claimingsplityeartreatmentthisyearspouse
+@splityeartreatmentarrivedthisyearself
+@splityeartreatmentarrivedthisyearspouse
+@splityeartreatmentarriveddatethisyearself
+@splityeartreatmentarriveddatethisyearspouse
+@splityeartreatmentdepartedthisyearself
+@splityeartreatmentdepartedthisyearspouse
+@splityeartreatmentdeparteddatethisyearself
+@splityeartreatmentdeparteddatethisyearspouse
+@splityeartreatmentresidentinirelandnextyearself
 
 removed elements
 
@@ -1290,6 +1302,22 @@ HighIncome > HighIncomeStatement
 						<xsd:attribute name="numberweeksworkedspouse" type="ros:positive2" use="optional"/>
 					</xsd:complexType>
 				</xsd:element>
+				<xsd:element name="SplitYearTreatment" minOccurs="0" maxOccurs="1">
+					<xsd:complexType>
+						<xsd:attribute name="claimingsplityeartreatmentthisyearself" type="ros:boolean" default="false"/>
+						<xsd:attribute name="claimingsplityeartreatmentthisyearspouse" type="ros:boolean" default="false"/>
+						<xsd:attribute name="splityeartreatmentarrivedthisyearself" type="ros:boolean" default="false"/>
+						<xsd:attribute name="splityeartreatmentarrivedthisyearspouse" type="ros:boolean" default="false"/>
+						<xsd:attribute name="splityeartreatmentarriveddatethisyearself" type="ros:date" use="optional"/>
+						<xsd:attribute name="splityeartreatmentarriveddatethisyearspouse" type="ros:date" use="optional"/>
+						<xsd:attribute name="splityeartreatmentdepartedthisyearself" type="ros:boolean" default="false"/>
+						<xsd:attribute name="splityeartreatmentdepartedthisyearspouse" type="ros:boolean" default="false"/>
+						<xsd:attribute name="splityeartreatmentdeparteddatethisyearself" type="ros:date" use="optional"/>
+						<xsd:attribute name="splityeartreatmentdeparteddatethisyearspouse" type="ros:date" use="optional"/>
+						<xsd:attribute name="splityeartreatmentresidentinirelandnextyearself" type="ros:boolean" default="false"/>
+						<xsd:attribute name="splityeartreatmentresidentinirelandnextyearspouse" type="ros:boolean" default="false"/>
+					</xsd:complexType>
+				</xsd:element>
 				<xsd:element name="USDividends" minOccurs="0">
 					<xsd:complexType>
 						<xsd:attribute name="subusdividendsself" type="ros:positive8" use="optional"/>
@@ -2541,8 +2569,8 @@ HighIncome > HighIncomeStatement
 						<xsd:attribute name="lossesinyear" type="ros:positive8" use="optional"/>
 						<xsd:attribute name="chargeablegainsyearspouse" type="ros:positive8" use="optional"/>
 						<xsd:attribute name="lossesinyearspouse" type="ros:positive8" use="optional"/>
-						<xsd:attribute name="defcgamount" type="ros:positive8" use="optional"/>
-						<xsd:attribute name="defcgamountspouse" type="ros:positive8" use="optional"/>
+						<xsd:attribute name="defcgamount" type="ros:positive10" use="optional"/>
+						<xsd:attribute name="defcgamountspouse" type="ros:positive10" use="optional"/>
 						<xsd:attribute name="defcgdate" type="ros:date" use="optional"/>
 						<xsd:attribute name="defcgdatespouse" type="ros:date" use="optional"/>
 						<xsd:attribute name="defcgdesc" type="ros:string40" use="optional"/>
