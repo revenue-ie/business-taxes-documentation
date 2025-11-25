@@ -1210,8 +1210,26 @@
 	"Form1-Trusts & Estates": {
 		"title": "Form1-Trusts & Estates - Schema & Notes",
 		"anchor": "PIT",
-		"cardText": "<p>This section provides documentation which advises users on the available schema & notes for each available version of Form1-Trusts & Estates",
+		"cardText": "<p>This section provides documentation which advises users on the available schema & notes for each available version of Form1. In order to aid third party development and integration work, we have made a provisional XML schema available for the Form 1 2025 marked with (“Currently In Development”). Please be advised that this schema is currently in development and is intended for initial guidance and testing purposes only. As the schema is not yet final, its structure and elements are subject to change prior to the official release.",
 		"cards": [
+            {
+              "link": "form1/pit1/v19/form1-v19-schema.xsd",
+              "description": "Form1 Schema v19– (Currently In Development)",
+              "anchor": "Form1_Schema_v19",
+              "type": "Schema",
+              "environment": "Tax periods ending in 2025",
+              "dateLastUpdated": "25/11/2025",
+              "category": "download"
+            },
+            {
+              "link": "form1/pit1/v19/form1v19notes.pdf",
+              "description": "Form1 Notes v19– (Currently In Development)",
+              "anchor": "Form1_Notes_v19",
+              "type": "PDF",
+              "environment": "Tax periods ending in 2025",
+              "dateLastUpdated": "25/11/2025",
+              "category": "download"
+            },
 			{
 				"link": "form1/pit1/v18/form1-v18-schema.xsd",
 				"description": "Form1 Schema v18",
