@@ -47,18 +47,18 @@ removed elements
 HighIncome > HighIncomeStatement
 @relintpdaqcompself
 @relintpdaqcompextself
+@sec284wearntearallowself
+@sec288balancingallownchargesself
 @investfilmself
 @empinvestrelself
 @donatapprovbodiesself
-@baresidunitusedself
-@baconvalhomeusedself
 @relintpdaqcompspouse
 @relintpdaqcompextspouse
+@sec284wearntearallowspouse
+@sec288balancingallownchargesspouse
 @investfilmspouse
 @empinvestrelspouse
 @donatapprovbodiesspouse
-@baresidunitusedspouse
-@baconvalhomeusedspouse
 
 
 -->
@@ -2735,6 +2735,10 @@ HighIncome > HighIncomeStatement
 						<xsd:attribute name="bahotelusedspouse" type="ros:positive10" use="optional"/>
 						<xsd:attribute name="banursinghomeusedself" type="ros:positive10" use="optional"/>
 						<xsd:attribute name="banursinghomeusedspouse" type="ros:positive10" use="optional"/>
+						<xsd:attribute name="baresidunitusedself" type="ros:positive10" use="optional"/>
+						<xsd:attribute name="baresidunitusedspouse" type="ros:positive10" use="optional"/>
+						<xsd:attribute name="baconvalhomeusedself" type="ros:positive10" use="optional"/>
+						<xsd:attribute name="baconvalhomeusedspouse" type="ros:positive10" use="optional"/>
 						<xsd:attribute name="bahospitalusedself" type="ros:positive10" use="optional"/>
 						<xsd:attribute name="bahospitalusedspouse" type="ros:positive10" use="optional"/>
 						<xsd:attribute name="basportinjclinusedself" type="ros:positive10" use="optional"/>
@@ -2753,10 +2757,6 @@ HighIncome > HighIncomeStatement
 						<xsd:attribute name="taxingtradeusedspouse" type="ros:positive10" use="optional"/>
 						<xsd:attribute name="repaymenttaxusedself" type="ros:positive10" use="optional"/>
 						<xsd:attribute name="repaymenttaxusedspouse" type="ros:positive10" use="optional"/>
-						<xsd:attribute name="sec284wearntearallowself" type="ros:positive10" use="optional"/>
-						<xsd:attribute name="sec284wearntearallowspouse" type="ros:positive10" use="optional"/>
-						<xsd:attribute name="sec288balancingallownchargesself" type="ros:positive10" use="optional"/>
-						<xsd:attribute name="sec288balancingallownchargesspouse" type="ros:positive10" use="optional"/>
 						<xsd:attribute name="custhsecapallself" type="ros:positive10" use="optional"/>
 						<xsd:attribute name="custhsecapallspouse" type="ros:positive10" use="optional"/>
 						<xsd:attribute name="custhsedblrentself" type="ros:positive10" use="optional"/>
