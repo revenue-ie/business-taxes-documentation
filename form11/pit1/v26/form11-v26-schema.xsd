@@ -2487,8 +2487,8 @@ HighIncome > HighIncomeStatement
 						<xsd:attribute name="mktacqspouse" type="ros:boolean" default="false"/>
 						<xsd:attribute name="s5994adiself" type="ros:boolean" default="false"/>
 						<xsd:attribute name="s5994adispouse" type="ros:boolean" default="false"/>
-						<xsd:attribute name="s5994adiamountself" type="ros:positive8" />
-						<xsd:attribute name="s5994adiamountspouse" type="ros:positive8" />
+						<xsd:attribute name="s5994adiamountself" type="ros:positive9" />
+						<xsd:attribute name="s5994adiamountspouse" type="ros:positive9" />
 					</xsd:complexType>
 				</xsd:element>
 				<xsd:element name="AcquisitionDetails" minOccurs="0">
