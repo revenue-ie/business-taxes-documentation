@@ -5,6 +5,55 @@ Document History:
 __________________________________________________________
 new elements
 
+GiftsDonation > SportsBodyDonationsInfo
+@donationssportsbodiesself
+@donationssportsbodiesspouse
+@detailsofsb
+@detailsofsbspouse
+@taxrefnumofsb
+@taxrefnumofsbspouse
+@appprojectnum
+@appprojectnumspouse
+@uniqueidentifier
+@uniqueidentifierspouse
+
+GiftsDonation > NGBDonationsInfo
+@amtngbdonations
+@amtngbdonationsspouse
+@detailsofngb
+@detailsofngbspouse
+@typeofngb
+@typeofngbspouse
+@qualprojectnum
+@qualprojectnumspouse
+@uniqueidentifierngb
+@uniqueidentifierngbspouse
+
+GiftsDonation
+@srp1confirm
+@srp1confirmspouse
+@srp2confirm
+@srp2confirmspouse
+@totalsbdonations
+@totalsbdonationsspouse
+@totalngbdonations
+@totalngbdonationsspouse
+
+Allowances > HRIClaims
+@hriCarriedForwardSelf
+@hriOnlineClaimSelf
+@hriOnlineClaimSpouse
+
+Prepopulation > HRIDetails
+@claimAmount
+@currentClaimAmount
+@previousClaimAmount
+@currentClaimAmountSpouse
+@previousClaimAmountSpouse
+@paymentAmount
+@claimDate
+@hriCarriedForwardSelfAmount
+
 Rental > Land
 @farmland7yearslessself
 @farmland7yearslessspouse
@@ -59,6 +108,13 @@ HighIncome > HighIncomeStatement
 @investfilmspouse
 @empinvestrelspouse
 @donatapprovbodiesspouse
+
+GiftDonations
+@approvedsportbodies
+@approvedsportbodiesspouse
+@approvedsportbodiesnameaddress
+@approvedsportsbodiesnameaddressspouse
+
 
 
 -->
@@ -2173,26 +2229,48 @@ HighIncome > HighIncomeStatement
 						<xsd:attribute name="seaclaimspouse" type="ros:positive8" use="optional"/>
 					</xsd:complexType>
 				</xsd:element>
-				<xsd:element name="GiftsDonations" minOccurs="0">
-					<xsd:complexType>
-						<xsd:attribute name="approvedsportbodies" type="ros:positive8" use="optional"/>
-						<xsd:attribute name="approvedsportbodiesspouse" type="ros:positive8" use="optional"/>
-						<xsd:attribute name="approvedsportsbodiesnameaddress" type="ros:string500" use="optional"/>
-						<xsd:attribute name="approvedsportsbodiesnameaddressspouse" type="ros:string500" use="optional"/>
-					</xsd:complexType>
-				</xsd:element>
-				<xsd:element name="IncapacitatedPersonAllow" minOccurs="0">
-					<xsd:complexType>
-						<xsd:attribute name="incappersonallow" type="ros:positive8" use="optional"/>
-						<xsd:attribute name="incappersonallowspouse" type="ros:positive8" use="optional"/>
-					</xsd:complexType>
-				</xsd:element>
-				<xsd:element name="EarnedIncomeCredit" minOccurs="0">
-					<xsd:complexType>
-						<xsd:attribute name="earnedincomecreditself" type="ros:boolean" default="false" />
-						<xsd:attribute name="earnedincomecreditspouse" type="ros:boolean" default="false" />
-					</xsd:complexType>
-				</xsd:element>
+                <xsd:element name="GiftsDonations" minOccurs="0">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="SportsBodyDonationsInfo" minOccurs="0">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="SportsBodyDonationsInfo" type="SportsBodyDonationsSet" minOccurs="0" maxOccurs="1"/>
+                                        <xsd:element name="SportsBodyDonations" type="SportsBodyDonationsSet" minOccurs="0" maxOccurs="1"/>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                            <xsd:element name="NGBDonationsInfo" minOccurs="0">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="NGBDonationsInfo" type="NGBDonationsSet" minOccurs="0" maxOccurs="1"/>
+                                        <xsd:element name="NGBDonations" type="NGBDonationsSet" minOccurs="0" maxOccurs="1"/>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                        <xsd:attribute name="srp1confirm"  type="ros:boolean" default="false"/>
+                        <xsd:attribute name="srp1confirmspouse" type="ros:boolean" default="false"/>
+                        <xsd:attribute name="srp2confirm"  type="ros:boolean" default="false"/>
+                        <xsd:attribute name="srp2confirmspouse" type="ros:boolean" default="false"/>
+                        <xsd:attribute name="totalsbdonations" type="ros:positive8" use="optional"/>
+                        <xsd:attribute name="totalsbdonationsspouse" type="ros:positive8" use="optional"/>
+                        <xsd:attribute name="totalngbdonations" type="ros:positive8" use="optional"/>
+                        <xsd:attribute name="totalngbdonationsspouse" type="ros:positive8" use="optional"/>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="IncapacitatedPersonAllow" minOccurs="0">
+                    <xsd:complexType>
+                        <xsd:attribute name="incappersonallow" type="ros:positive8" use="optional"/>
+                        <xsd:attribute name="incappersonallowspouse" type="ros:positive8" use="optional"/>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="EarnedIncomeCredit" minOccurs="0">
+                    <xsd:complexType>
+                        <xsd:attribute name="earnedincomecreditself" type="ros:boolean" default="false" />
+                        <xsd:attribute name="earnedincomecreditspouse" type="ros:boolean" default="false" />
+                    </xsd:complexType>
+                </xsd:element>
 				<xsd:element name="TuitionFees" minOccurs="0">
 					<xsd:complexType>
 						<xsd:sequence>
@@ -2288,6 +2366,13 @@ HighIncome > HighIncomeStatement
 						<xsd:attribute name="amount" type="ros:positive8" use="optional"/>
 					</xsd:complexType>
 				</xsd:element>
+                <xsd:element name="HRIClaims" minOccurs="0">
+                    <xsd:complexType>
+                        <xsd:attribute name="hriCarriedForwardSelf" type="ros:positive8" use="optional"/>
+                        <xsd:attribute name="hriOnlineClaimSelf" type="ros:positive8" use="optional"/>
+                        <xsd:attribute name="hriOnlineClaimSpouse" type="ros:positive8" use="optional"/>
+                    </xsd:complexType>
+                </xsd:element>
 				<xsd:element name="StaySpendsSelf" type="StaySpendSet" minOccurs="0" maxOccurs="1"/>
 				<xsd:element name="StaySpendsSpouse" type="StaySpendSet" minOccurs="0" maxOccurs="1"/>
 			</xsd:sequence>
@@ -3527,12 +3612,6 @@ HighIncome > HighIncomeStatement
 									<xsd:attribute name="spouse" type="xsd:integer" use="optional"/>
 								</xsd:complexType>
 							</xsd:element>
-							<xsd:element name="ApprovedSportBodies" minOccurs="0">
-								<xsd:complexType>
-									<xsd:attribute name="amount" type="xsd:integer" use="optional"/>
-									<xsd:attribute name="spouse" type="xsd:integer" use="optional"/>
-								</xsd:complexType>
-							</xsd:element>
 							<xsd:element name="RentalCA" minOccurs="0">
 								<xsd:complexType>
 									<xsd:attribute name="amount" type="xsd:integer" use="optional"/>
@@ -4226,6 +4305,18 @@ HighIncome > HighIncomeStatement
 			</xsd:sequence>
 		</xsd:complexType>
 	</xsd:element>
+    <xsd:element name="HRIDetails">
+        <xsd:complexType>
+            <xsd:attribute name="claimAmount" type="xsd:decimal"/>
+            <xsd:attribute name="currentClaimAmount" type="xsd:decimal"/>
+            <xsd:attribute name="previousClaimAmount" type="xsd:decimal"/>
+            <xsd:attribute name="currentClaimAmountSpouse" type="xsd:decimal"/>
+            <xsd:attribute name="previousClaimAmountSpouse" type="xsd:decimal"/>
+            <xsd:attribute name="paymentAmount" type="xsd:decimal"/>
+            <xsd:attribute name="claimDate" type="ros:date"/>
+            <xsd:attribute name="hriCarriedForwardSelfAmount" type="xsd:decimal"/>
+        </xsd:complexType>
+    </xsd:element>
 	<xsd:element name="EPSWTDetails">
 		<xsd:complexType>
 			<xsd:attribute name="totalGrossPay" type="xsd:decimal" use="optional"/>
@@ -4517,6 +4608,32 @@ HighIncome > HighIncomeStatement
 		<xsd:attribute name="netCredit" type="ros:positive9" use="optional"/>
 		<xsd:attribute name="netCreditSpouse" type="ros:positive9" use="optional"/>
 	</xsd:complexType>
+
+    <xsd:complexType name="SportsBodyDonationsInfoList">
+        <xsd:attribute name="donationssportsbodiesself" type="ros:positive8" use="optional"/>
+        <xsd:attribute name="donationssportsbodiesspouse" type="ros:positive8" use="optional"/>
+        <xsd:attribute name="detailsofsb" type="ros:string500" use="optional"/>
+        <xsd:attribute name="detailsofsbspouse" type="ros:string500" use="optional"/>
+        <xsd:attribute name="taxrefnumofsb" type="ros:string40" use="optional"/>
+        <xsd:attribute name="taxrefnumofsbspouse" type="ros:string40" use="optional"/>
+        <xsd:attribute name="appprojectnum" type="ros:string40" use="optional"/>
+        <xsd:attribute name="appprojectnumspouse" type="ros:string40" use="optional"/>
+        <xsd:attribute name="uniqueidentifier" type="ros:string40" use="optional"/>
+        <xsd:attribute name="uniqueidentifierspouse" type="ros:string40" use="optional"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="NGBDonationsInfoList">
+        <xsd:attribute name="amtngbdonation" type="ros:positive8" use="optional"/>
+        <xsd:attribute name="amtngbdonationspouse" type="ros:positive8" use="optional"/>
+        <xsd:attribute name="detailsofngb" type="ros:string500" use="optional"/>
+        <xsd:attribute name="detailsofngbspouse" type="ros:string500" use="optional"/>
+        <xsd:attribute name="typeofngb" type="ros:string40" use="optional"/>
+        <xsd:attribute name="typeofngbspouse" type="ros:string40" use="optional"/>
+        <xsd:attribute name="qualprojectnum" type="ros:string40" use="optional"/>
+        <xsd:attribute name="qualprojectnumspouse" type="ros:string40" use="optional"/>
+        <xsd:attribute name="uniqueidentifierngb" type="ros:string40" use="optional"/>
+        <xsd:attribute name="uniqueidentifierngbspouse" type="ros:string40" use="optional"/>
+    </xsd:complexType>
 
 	<xsd:complexType name="ResidentTenancyDetails">
 		<xsd:attribute name="residenttenancynumber" type="ros:string25" use="optional"/>
