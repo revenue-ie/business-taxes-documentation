@@ -4,6 +4,7 @@
 		"anchor": "PIT",
 		"cardText": "<p>This section provides documentation which advises users on the available schema & notes for each available version of CT1",
 		"cards": [
+
 			{
 				"link": "ct1/pit1/v25/formct1-v25-schema.xsd",
 				"description": "CT1 Schema v25",
@@ -863,6 +864,24 @@
 		"anchor": "PIT",
 		"cardText": "<p>This section provides documentation which advises users on the available schema & notes for each available version of Form1-Firms",
 		"cards": [
+            {
+              "link": "form1firms/pit1/v26/form1firms-v26-schema.xsd",
+              "description": "Form1-Firms Schema v26",
+              "anchor": "Form1-Firms_Schema_v26",
+              "type": "Schema",
+              "environment": "Tax periods ending in 2025",
+              "dateLastUpdated": "18/03/2026",
+              "category": "download"
+            },
+            {
+              "link": "form1firms/pit1/v26/form1firmsv26notes.pdf",
+              "description": "Form1-Firms Notes v26",
+              "anchor": "Form1-Firms_Notes_v26",
+              "type": "PDF",
+              "environment": "Tax periods ending in 2025",
+              "dateLastUpdated": "18/03/2026",
+              "category": "download"
+            },
 			{
 				"link": "form1firms/pit1/v25/form1firms-v25-schema.xsd",
 				"description": "Form1-Firms Schema v25",

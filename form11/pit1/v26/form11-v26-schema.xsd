@@ -1938,7 +1938,7 @@ HighIncome > HighIncomeStatement
 						<xsd:attribute name="deductionAmtfiveyearsbeforespouse" type="ros:positive8" use="optional" />
 						<xsd:attribute name="deductionAmtsixyearsbeforespouse" type="ros:positive8" use="optional" />
 						<xsd:attribute name="deductionAmttobecarriedfwspouse" type="ros:positive8" use="optional" />
-						
+
 					</xsd:complexType>
 				</xsd:element>
 				<xsd:element name="EiiAllowance" minOccurs="0">
