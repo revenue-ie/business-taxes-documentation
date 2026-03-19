@@ -2,9 +2,26 @@
 	"CT1": {
 		"title": "CT1 - Schema & Notes",
 		"anchor": "PIT",
-		"cardText": "<p>This section provides documentation which advises users on the available schema & notes for each available version of CT1",
+		"cardText": "<p>This section provides documentation which advises users on the available schema & notes for each available version of CT1. In order to aid third party development and integration work, we have made a provisional XML schema available for the CT1 2026 marked with (“Currently In Development”). Please be advised that this schema is currently in development and is intended for initial guidance and testing purposes only. As the schema is not yet final, its structure and elements are subject to change prior to the official release.",
 		"cards": [
-
+            {
+              "link": "ct1/pit1/v26/formct1-v26-schema.xsd",
+              "description": "CT1 Schema v26– (Currently In Development)",
+              "anchor": "CT1_Schema_v26",
+              "type": "Schema",
+              "environment": "Tax periods ending in 2026",
+              "dateLastUpdated": "19/03/2026",
+              "category": "download"
+            },
+            {
+              "link": "ct1/pit1/v26/ct1v26notes.pdf",
+              "description": "CT1 Notes v26- (Currently In Development)",
+              "anchor": "CT1_Notes_v26",
+              "type": "PDF",
+              "environment": "Tax periods ending in 2026",
+              "dateLastUpdated": "19/03/2026",
+              "category": "download"
+            },
 			{
 				"link": "ct1/pit1/v25/formct1-v25-schema.xsd",
 				"description": "CT1 Schema v25",
