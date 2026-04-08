@@ -3,28 +3,8 @@
 
 Document History:
 __________________________________________________________
-REMOVED
-@plantAndMachineryExcessNotClaimed
 
-Trading Reesults [added Elements] START
-	@amntWearTearAllowancesSec403
-	@totalBalancingAllowancesSec403
-	@amntWearTearAllowancesSec404
-	@totalBalancingAllowancesSec404
-	@totalSpecifiedCapAllowances
-
-	@relevantLeasingLosesCheckBox
-	@relevantLeasingCarriedForward
-	@relevantLeasingArising
-	@relevantLeasingUtilised
-	@relevantLeasingNotUsed
-
-	@lossesArisingCheckBox
-	@amtLossesCarriedForward
-	@amtLossesArising
-	@amtLossesUtilised
-	@amtLossesNotUsed
-Trading Results
+i- Trading Results
 	[added Elements]
 	@stockExchangeExpenditure
 	[RelevantTradeWithinSection291A added Elements]
@@ -35,368 +15,103 @@ Trading Results
 	@amountUnusedBalancingAllowanceBefore
 	@amountUnusedBalancingAllowanceAfter
 	@reliefAmtBeingClaimed
-i-RecoveryOfIncomeTax
-	[added Element]
-	countryWithoutDeduction
-	[added attributes]
-	@interestPaidCountryWithoutDeduction
-	@interestPaidWithoutDeduction
 
-ii-ResearchAndDevelopment
-	[added attributes]
-	@amtCarriedFwrdUnder766
-	@amtCarriedFwrdUnder766A
-
-iii-ResearchAndDevelopment/sec766C
-	[added attributes]
-	@amtRDcorpTaxAt30
-	@isPreFillingRevenue
-	@rAndDtaxTwoAcctPeriod
-	@rAndDtaxTwoAcctPeriodFirst
-	@rAndDtaxTwoAcctPeriodScnd
-	@rAndDtaxTwoAcctPeriodBalance
-	@firstInstalmentCreditClaimed
-	@thirdInstalmentCreditClaimed
-	@isTreatedAsOverpaymentThird
-	@treatedAsOverpaymentThird
-	@isAmtPaidByRevenueThird
-	@amtPaidByRevenueThird
-	@isExcessPartSurrToEmpThird
-	@excessPartSurrdToEmpThird
-	@employeePPSNThird
-	@employeePPSNThirdAmt
-	@sucessorClaimAmt
-	@sucessorClaimCompany1
-	@sucessorClaimCompany2
-	@sucessorClaimCompany3
-	@sucessorClaimFirst
-	@sucessorClaimScnd
-	@sucessorClaimThird
-	@isClaimOverpayment
-	@isClaimOverpaymentAmt
-	@isClaimPaidByRev
-	@isClaimPaidByRevAmt
-
-
-iv-ResearchAndDevelopment/sec766D
-	[added attributes]
-	@amtRDcorpTaxAt30
-	@isPreFillingRevenue
-	@rAndDtaxPrior
-	@rAndDtaxPriorFirst
-	@rAndDtaxPriorBalance
-	@rAndDtaxTwoAcctPeriod
-	@rAndDtaxTwoAcctPeriodFirst
-	@rAndDtaxTwoAcctPeriodScnd
-	@rAndDtaxTwoAcctPeriodBalance
-	@thirdInstalmentAmount
-	@isTreatedAsOverpay3rdInstal
-	@treatedAsOverpay3rdInstal
-	@isExcessFromOtherGroup3rdInstal
-	@excessFromOtherGroup3rdInstal
-	@employee1PPSN3rdInstalment
-	@employee1Amount3rdInstalment
-	@isExcessFromOtherGroupSurr3rdInstal
-	@excessFromOtherGroupSurr3rdInstal
-	@employee2PPSN3rdInstalment
-	@employee2Amount3rdInstalment
-	@isPaidByRevenue3rdInstalment
-	@paidByRevenue3rdInstalment
-	@sucessorClaimAmt
-	@sucessorClaimCompany1
-	@sucessorClaimCompany2
-	@sucessorClaimCompany3
-	@sucessorClaimFirst
-	@sucessorClaimScnd
-	@sucessorClaimThird
-	@isClaimOverpayment
-	@isClaimOverpaymentAmt
-	@isClaimPaidByRev
-	@isClaimPaidByRevAmt
-
-v-TradingResults/ExceptedTradeProfits
-	[removed attributes]
-	@interinClainUnderSec396d
-	@finalClainUnderSec396a
-	@companyExpectLoss
-	@companyIsTaxCompliant
-
-vi-TradingResults/QualifyingAssetsProfits
-	[removed attributes]
-	@interinClainUnderSec396d
-	@finalClainUnderSec396a
-	@companyExpectLoss
-	@companyIsTaxCompliant
-
-vi-Deductions/ReliefOnValueBasis
-	[removed attributes]
-	@qualAssetsCapitalAllowance
-	@qualAssetsLosses
-	@qualAssetsCharges
-	@qualAssetsGroupRelief
-	@companyExpectLoss
-	@companyIsTaxCompliant
-	@qualyCompanyExpectLoss
-	@qualyCompanyIsTaxCompliant
-	@qualAssetsLossesCarriedBack
-	@interinClainUnderSec396d
-	@qualyInterinClainUnderSec396d
-
-vii-CompanyDetails
-	[removed attributes]
-	@companyNamePaymentWasMade
-	@recipientTaxReference
-	@recipientPaymentAmount
-
-	[new element]
-	additionalCompaniesMembers
-	[added attributes]
-	@companyNamePaymentWasMade
-	@recipientTaxReference
-	@recipientPaymentAmount
-
-	[new element]
-	OutboundPayments
-	[added attributes]
-	@paymentdate
-	@paymenttype
-	@grosspayment
-	@withheldamount
-	@country
-	@explanation
-	@explanationdetails
-
-vii-ResearchAndDevelopment/sec766
-	[removed element]
-	EmployeeDetails
-	[removed attributes]
-	@rndCreditSurrendered766Emp
-	@employeePpsn
-	@amountCreditForThisPeriodAt25
-	@expenditureMachineryPlant
-	@amountSurrendedInAccSec7662A
-	@fisrtInstClaim766
-	@isClaimingToHaveExcessPaid
-	@amtClaimed2ndSec7664b
-	@amtClaimed3rdSec7664b
-
-
-
-viii-ResearchAndDevelopment/sec766A
-	[removed attributes]
-	@amountCreditClaimedConstruction
-	@groupReliefUnder766A
-	@taxReferenceNumberSurrended
-	@groupReliefUnder766A4b
-	@taxReferenceCreditAllocated
-	@fisrtInstalment
-	@isClaimingExcess2nd3rdInstalment
-	@secondInstalmentClaimed
-	@thirdInstalmentClaimed
-
-iv-RentalIncome
+ii-RentalIncome
 	[new attributes]
-	@grosspaynlwt
-	@deductionamountnlwt
 	@numberOfQualifyingCRD
 	@totalDwellingsRent
 	@totalGainsAgainstCT
 	@confirmationOnHousingAct
 
-iv-OtherCodes
-	[new attributes]
-	@suspicioussuspend
-
-ix- Company Details
-	[new attribute]
-	@surrenderLossesConfirmation
-	@claimLossesConfirmation
-	[removed attributes]
-	@deMinimisAidCheckBox
-	@deMinimisAidConfirmationText
-	@grossGrantDMA
-
-    - deMinimisAid
-	[New Attribtues 25.2]
-	deMinimisAidCheckBox
-	grossGrantCompanyRelief486C
-	grossGrantLCI372AAC
-	grossGrantLCI372AAD
-	grossGrantIndustrialAviation
-	grossGrantGeneralDeMinimisAid
-	grossGrantDeMinimisAid1408
-	grossGrantDeMinimisAid717
-	grossGrantDeMinimisAid2832
 
 
-	- GroupForIrishTaxPurposes
-	[new attributes]
-	@AddDetailsSurrenderedLossList
-	@surrenderOfLossesNamePpsn
-	@amtSurrendered
-	@natureOfRelief
-	@clause_1_Activity
-	@clause_2_Activity1
-	@clause_2_Activity2
-	@clause_3_Activity
-	@clause_4_Activity1
-	@clause_4_Activity2
-	@clause_4_Activity3
-
-	@AddDetailsClaimedLosses
-	@claimToLossNamePpsn
-	@amtClaimed
-	@natureOfRelief
-	@clause_1_Activity
-	@clause_2_Activity1
-	@clause_2_Activity2
-	@clause_3_Activity
-	@clause_4_Activity1
-	@clause_4_Activity2
-	@clause_4_Activity3
-
-x - IrishInvestmentAndOtherIncome - LeasingProfits
-	[new attributes]
-	@caArisingFromNonTradingActivity
-	@caForwardFromPriorAP
-	@caArisingThisAP
-	@wearAndTearAmount
-	@totalBalancingAmount
-	@caUtilisedInAP
-	@unusedCAToCarryForward
-	@notAssociateEnterprise
-
-xi- LaclClaimDetails - Company Details
-	@laclNamePpsn
-	@claimConfirmation
-	@isLesseeTaxResident
-	@countryOfResidenceOfParent
-	@associateEnterprise
-	@marketValueOfLeasedAssets
-	@leaseIncome
-	@actualLeasePayment
-	@capitalAllowance
-	@totalClaimed
-	@claimButton
-	@leaseIncomeCheckbox
-
-xi- LaclClaimDetails - Company Details
+iii- LaclClaimDetails - Company Details
 	[Removed Attribute]
 	@totalClaimed
 
-xi- LacLessorsClaimDetails - Company Details
-	@lacLessorsNamePpsn
-	@claimConfirmation
-	@isLessorTaxResident
-	@countryOfResidenceOfParent
-	@associateEnterprise
-	@marketValueOfLeasedAssets
-	@leasePayment
-	@actualLeasePayable
-	@capitalAllowance
-	@claimButton
-	@totalCapitalExpenditure
 
-xi- LacLessorsClaimDetails - Company Details
+iv- LacLessorsClaimDetails - Company Details
 	[Removed Attribute]
 	@totalClaimed
 
-xii - IrishInvestment - DigitalGamesRelief - DigitalGamesReliefUnderS481A19
-	[new attributes]
-	@isTreatedAsOverpaymentSec960H
-	@treatedAsOverpaymentSec960HAmt
-	@isPaidByRevenue
-	@paidByRevenueAmt
-	@treatedAsOverpaymentOffset
-	@accountingPeriodBegin
-	@accountingPeriodEnd
 
-xiii - IrishInvestment - DigitalGamesRelief - DigitalGamesReliefUnderS481A20
-	[new attributes]
-	@isTreatedAsOverpaymentSec960H
-	@treatedAsOverpaymentSec960HAmt
-	@isPaidByRevenue
-	@paidByRevenueAmt
-	@treatedAsOverpaymentOffset
-
-xiv - IrishInvestment
-	[new element]
-	++QualifyingFinancingCompanies
-	[new attributes]
-	incomeUnmatchedLoanAmt
-	grossQualifyingCompanyIncome
-	netQualifyingCompanyIncome
-
-	[new element]
-	++QualifyingFinancingCompaniesList
-	[new attributes]
-	isQualiCompanySec766E
-	loanRecipientName
-	loanRecipientTaxNumber
-	loanRecipientCountry
-	loanPrincipalAmt
-	loanBalancelAmt
-	loanInterestDeductible
-
-	[new element]
-	++Recipient
-	[new attributes]
-	externalLenderName
-	externalTaxNumber
-	externalCountry
-	externalLoanPrincipalAmt
-	externalLoanBalancelAmt
-	externalLoanInterestDeductible
-
-
-
-
-Xv - CapitalGainsConsiderations
-	[New Attributes]
-	@confirmPlantAndMachinery
-	@numberOfDisposals
-	@netGainOrLoss
-
-	@totalProfitsOrLosses
-
-Xvi - transferPricing
-	[New Attribute]
-	@chargeablePeriodUnder835DA
-
-Xvi - Expenses
-	[Removed Attribute]
-	stockExchangeExpenditure
-
-XVii - deductions,relief and credit
-	[New Attribute]
-	managementExpensesUnder81D
-
-	amtRelClaimedUnderSchedule24
-	[@SportsDonationsScheme]
-	@donationAmt
-	@dateOfDonation
-	@sportsBodyName
-	@sportsBodyNumber
-	@sportsBodyProjectNumber
-	@receiptConfirmation
-
-
-Xvii - FilmCorporationTaxCredit
-	[New Attribute]
-	@qualifyingExpenditure
-	@featureFilmEnhancedCredit
-	@featureFilmType
-	@qualifyingFilmName
-
-Xviii - ForeignIncome
+v - ForeignIncome
 	[New Attribute]
 	@distributionAmountOutOfProfit
 	@distributionAmountOutOfAssets
 
 
-Xix - FilmCorporationTaxCredit
+vi - FilmCorporationTaxCredit
 	[Added New section:Interim Unscripted Corporation Tax ]
 	[Added New section:Final Unscripted Corporation Tax ]
+	[New Attributes in Film Details]
+	@vfxEnhancedCredit
+	@vfxMinExpenditureDeclaration
+	@vfxCreditAt40Percent
+	@vfxCreditAt32Percent
+
+vii - ResearchAndDevelopmentCredit/sec766c
+	[added attribute]
+	@amtRDcorpTaxAt35
+	@firstInstalmentCredit35
+
+	[added element]
+	@employee1st
+
+	[added attribute]
+	@employeePPSN
+	@employeeAmount
+
+	[added element]
+	@employee2nd
+
+	[added attribute]
+	@employeePPSN
+	@employeeAmount
+
+	[added element]
+	@employee3rd
+
+	[added attribute]
+	@employeePPSN
+	@employeeAmount
+
+	[removed attribute]
+	@employeePPSN
+	@employeeAmount
+	@employeePPSN2ndInstalment
+	@employeeAmount2ndInstalment
+	@employeePPSNThird
+	@employeePPSNThirdAmt
+
+
+viii - ResearchAndDevelopmentCredit/sec766d
+	[added attribute]
+	@amtRDcorpTaxAt35
+
+ix - digitalGamesRelief/DigitalGamesReliefUnderS481A19
+	[removed attribute]
+	@accountingPeriodBegin
+	@accountingPeriodEnd
+
+	[added attribute]
+	dateOfIssue
+
+x - digitalGamesRelief/DigitalGamesReliefUnderS481A20
+	[removed attribute]
+	@accountingPeriodBegin
+	@accountingPeriodEnd
+
+xi - irishinvestmentincome/clawback
+	[added element]
+	@FilmClawbackSec487A
+
+	[added attribute]
+	@filmCertRef
+	@unauthAmountChargeable
+	@totalFilmClawbackSec487A
+
+
 -->
 
 <xsd:schema xmlns="http://www.ros.ie/schemas/formct1/v26/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.ros.ie/schemas/formct1/v26/" elementFormDefault="qualified" attributeFormDefault="unqualified">
@@ -1429,6 +1144,12 @@ Xix - FilmCorporationTaxCredit
                                     <xsd:attribute name="unauthAmountChargeable" type="euros16" use="optional"/>
                                 </xsd:complexType>
                             </xsd:element>
+                            <xsd:element name="FilmClawbackSec487A" minOccurs="0" maxOccurs="20">
+                                <xsd:complexType>
+                                    <xsd:attribute name="filmCertRef" type="text20" use="optional"/>
+                                    <xsd:attribute name="unauthAmountChargeable" type="euros16" use="optional"/>
+                                </xsd:complexType>
+                            </xsd:element>
                         </xsd:sequence>
                         <xsd:attribute name="amountTaxableSec766" type="euros16" use="optional"/>
                         <xsd:attribute name="amountTaxableSec766b" type="euros16" use="optional"/>
@@ -1436,6 +1157,7 @@ Xix - FilmCorporationTaxCredit
                         <xsd:attribute name="amountTaxableSec766c" type="euros16" use="optional"/>
                         <xsd:attribute name="amountTaxableSec766d" type="euros16" use="optional"/>
                         <xsd:attribute name="totalFilmClawback" type="euros16" use="optional"/>
+                        <xsd:attribute name="totalFilmClawbackSec487A" type="euros16" use="optional"/>
                     </xsd:complexType>
                 </xsd:element>
                 <xsd:element name="InterestArisingInState" minOccurs="0">
@@ -2144,6 +1866,10 @@ Xix - FilmCorporationTaxCredit
                         <xsd:attribute name="featureFilmEnhancedCredit" type="boolean" use="optional" default="false" />
                         <xsd:attribute name="featureFilmType" type="text20" use="optional"/>
                         <xsd:attribute name="qualifyingFilmName" type="text20" use="optional"/>
+                        <xsd:attribute name="vfxEnhancedCredit" type="boolean" use="optional" default="false" />
+                        <xsd:attribute name="vfxMinExpenditureDeclaration" type="boolean" use="optional" default="false" />
+                        <xsd:attribute name="vfxCreditAt40Percent" type="euros16" use="optional"/>
+                        <xsd:attribute name="vfxCreditAt32Percent" type="euros16" use="optional"/>
                     </xsd:complexType>
                 </xsd:element>
                 <xsd:element name="FilmUnscriptedProductionInterimClaim" minOccurs="0" maxOccurs="40">
@@ -2375,6 +2101,7 @@ Xix - FilmCorporationTaxCredit
             <xsd:attribute name="otherIncome" type="euros16" use="optional"/>
             <xsd:attribute name="rdClawback" type="euros16" use="optional"/>
             <xsd:attribute name="filmClawback" type="euros16" use="optional"/>
+            <xsd:attribute name="filmClawbackSec487A" type="euros16" use="optional"/>
             <xsd:attribute name="capitalGains" type="euros16" use="optional"/>
             <xsd:attribute name="totalIncome" type="euros13" use="optional"/>
             <xsd:attribute name="losses" type="euros16" use="optional"/>
@@ -2405,6 +2132,7 @@ Xix - FilmCorporationTaxCredit
             <xsd:attribute name="otherIncTaxBorneIncRec" type="euros16" use="optional"/>
             <xsd:attribute name="rAndDCredit" type="euros16" use="optional"/>
             <xsd:attribute name="totalFilmCredit" type="euros16" use="optional"/>
+            <xsd:attribute name="totalFilmUnscriptedProductionClaims" type="euros16" use="optional"/>
             <xsd:attribute name="totalCredits" type="euros13" use="optional"/>
             <xsd:attribute name="totalCreditsIds" type="positiveDec13" use="optional"/>
             <xsd:attribute name="amtPayUnderDeductOfTax" type="euros16" use="optional"/>
