@@ -5,9 +5,14 @@ Document History:
 __________________________________________________________
 
 i- Trading Results
-	[added Elements]
+	[added Attribute]
 	@stockExchangeExpenditure
-	[RelevantTradeWithinSection291A added Elements]
+	@confirmDeductionMadeUnder81E
+	@confirmEligibleExpenditureUnder81E
+	@numberOfApartmentCompletedUnder81E
+	@relevantBeneficialOwnerUnder81E
+
+	[RelevantTradeWithinSection291A added Attributes]
 	@amountBalancingAllowanceClaimedBefore
 	@amountBalancingAllowanceClaimedAfter
 	@amountBalancingAllowanceAPBefore
@@ -49,6 +54,7 @@ vi - FilmCorporationTaxCredit
 	@vfxMinExpenditureDeclaration
 	@vfxCreditAt40Percent
 	@vfxCreditAt32Percent
+	@totalUnscriptedProductionTaxCreditClaimed
 
 vii - ResearchAndDevelopmentCredit/sec766c
 	[added attribute]
@@ -111,7 +117,10 @@ xi - irishinvestmentincome/clawback
 	@unauthAmountChargeable
 	@totalFilmClawbackSec487A
 
-
+xii - SummaryCalculation
+	[added attributes]
+	@unscriptedProductionTaxOffset
+	@unscriptedProductionTaxRefund
 -->
 
 <xsd:schema xmlns="http://www.ros.ie/schemas/formct1/v26/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.ros.ie/schemas/formct1/v26/" elementFormDefault="qualified" attributeFormDefault="unqualified">
@@ -2132,7 +2141,8 @@ xi - irishinvestmentincome/clawback
             <xsd:attribute name="otherIncTaxBorneIncRec" type="euros16" use="optional"/>
             <xsd:attribute name="rAndDCredit" type="euros16" use="optional"/>
             <xsd:attribute name="totalFilmCredit" type="euros16" use="optional"/>
-            <xsd:attribute name="totalFilmUnscriptedProductionClaims" type="euros16" use="optional"/>
+            <xsd:attribute name="unscriptedProductionTaxOffset" type="euros16" use="optional"/>
+            <xsd:attribute name="unscriptedProductionTaxRefund" type="euros16" use="optional"/>
             <xsd:attribute name="totalCredits" type="euros13" use="optional"/>
             <xsd:attribute name="totalCreditsIds" type="positiveDec13" use="optional"/>
             <xsd:attribute name="amtPayUnderDeductOfTax" type="euros16" use="optional"/>
