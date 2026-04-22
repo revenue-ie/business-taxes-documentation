@@ -121,6 +121,38 @@ xii - SummaryCalculation
 	[added attributes]
 	@unscriptedProductionTaxOffset
 	@unscriptedProductionTaxRefund
+
+xiii - CompanyDetails
+	[added attributes]
+	@countryOfResidenceAddress
+	@countryOfResidenceCompanyName
+	@countryOfResidenceTaxID
+	@relevantMigrationCountry
+
+xiv - CompanyDetails/GroupForIrishTaxPurposes/AddDetailsClaimedLoss
+	[added attribute]
+	@clause_4_Activity4
+
+xv - CompanyDetails/GroupForIrishTaxPurposes/AddDetailsSurrenderedLossList
+	[added attribute]
+	@clause_4_Activity4
+
+xvi - CompanyDetails/deMinimisAid
+	[added attribute]
+	@grossGrantLCI372AAE
+
+xvii - PropertyBasedIncentives/IndustBuildAllowance
+	[added element]
+	LivingCityInitiativeSection372AAE
+
+xviii - LivingCityInitTradeProf
+	[added attributes]
+	@claim372AAE
+	@addrqualifying372AAE
+	@eircode372AAE
+	@qualifyingexpenditure372AAE
+	@identificationnumber372AAE
+	@referencenumber372AAE
 -->
 
 <xsd:schema xmlns="http://www.ros.ie/schemas/formct1/v26/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.ros.ie/schemas/formct1/v26/" elementFormDefault="qualified" attributeFormDefault="unqualified">
