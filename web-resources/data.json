@@ -1599,7 +1599,7 @@
           "cards": [
             {
               "description": "VAT3 Schema Notes",
-              "link": "vat3/VAT3%20Schema%20Notes.pdf",
+              "link": "vat3/VAT3-Schema-Notes.pdf",
               "type": "PDF",
               "category": "VAT3",
               "environment": "Live",
@@ -1607,7 +1607,7 @@
             },
             {
               "description": "VAT3 Return Rules",
-              "link": "vat3/VAT3%20Return%20Rules.pdf",
+              "link": "vat3/VAT3-Return-Rules.pdf",
               "type": "PDF",
               "category": "VAT3",
               "environment": "Live",
@@ -1615,7 +1615,7 @@
             },
             {
               "description": "VAT3 Webservice Error Structure Guide",
-              "link": "vat3/VAT3%20Webservice%20Error%20Structure%20Guide.pdf",
+              "link": "vat3/VAT3-Webservice-Error-Structure-Guide.pdf",
               "type": "PDF",
               "category": "VAT3",
               "environment": "Live",
@@ -1623,7 +1623,7 @@
             },
             {
               "description": "REST VAT3 Web Service Integration Guide",
-              "link": "vat3/REST%20VAT3%20Web%20Service%20Integration%20Guide.pdf",
+              "link": "vat3/REST-VAT3-Web-Service-Integration-Guide.pdf",
               "type": "PDF",
               "category": "VAT3",
               "environment": "Live",
@@ -1636,7 +1636,7 @@
               "cards": [
                 {
                   "description": "Sample POST Request - Sample String",
-                  "link": "vat3/request-responses/Sample POST Request Sample String",
+                  "link": "vat3/request-responses/Sample-POST-Request-Sample-String.xml",
                   "type": "XML",
                   "category": "VAT3",
                   "environment": "Test & Live",
@@ -1652,7 +1652,7 @@
                 },
                 {
                   "description": "200 Response",
-                  "link": "vat3/request-responses/200Response",
+                  "link": "vat3/request-responses/200Response.xml",
                   "type": "XML",
                   "category": "VAT3",
                   "environment": "Test & Live",
@@ -1660,7 +1660,7 @@
                 },
                 {
                   "description": "400 Response",
-                  "link": "vat3/request-responses/400Response",
+                  "link": "vat3/request-responses/400Response.xml",
                   "type": "XML",
                   "category": "VAT3",
                   "environment": "Test & Live",
@@ -1668,7 +1668,7 @@
                 },
                 {
                   "description": "401 Response",
-                  "link": "vat3/request-responses/401Response",
+                  "link": "vat3/request-responses/401Response.xml",
                   "type": "XML",
                   "category": "VAT3",
                   "environment": "Test & Live",
@@ -1676,7 +1676,7 @@
                 },
                 {
                   "description": "403 Response",
-                  "link": "vat3/request-responses/403Response",
+                  "link": "vat3/request-responses/403Response.xml",
                   "type": "XML",
                   "category": "VAT3",
                   "environment": "Test & Live",
@@ -1684,7 +1684,7 @@
                 },
                 {
                   "description": "500 Response",
-                  "link": "vat3/request-responses/500Response",
+                  "link": "vat3/request-responses/500Response.xml",
                   "type": "XML",
                   "category": "VAT3",
                   "environment": "Test & Live",
