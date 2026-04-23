@@ -1591,5 +1591,107 @@
 				"category": "download"
 			}
 		]
-	}
+	},
+        "VAT3": {
+          "anchor": "vat3",
+          "title": "VAT3 - Schema & Notes",
+          "cardText": "The VAT3 return is used to report Value Added Tax (VAT) liabilities and credits for a taxable period. The following documents provide the XML schema, integration guide, and supporting notes for third-party software developers submitting VAT3 returns electronically via ROS.",
+          "cards": [
+            {
+              "description": "VAT3 Schema Notes",
+              "link": "vat3/VAT3 Schema Notes.pdf",
+              "type": "PDF",
+              "category": "VAT3",
+              "environment": "Live",
+              "dateLastUpdated": "23/04/2026"
+            },
+            {
+              "description": "VAT3 Return Rules",
+              "link": "vat3/VAT3 Return Rules.pdf",
+              "type": "PDF",
+              "category": "VAT3",
+              "environment": "Live",
+              "dateLastUpdated": "23/04/2026"
+            },
+            {
+              "description": "VAT3 Webservice Error Structure Guide",
+              "link": "vat3/VAT3 Webservice Error Structure Guide.pdf",
+              "type": "PDF",
+              "category": "VAT3",
+              "environment": "Live",
+              "dateLastUpdated": "23/04/2026"
+            },
+            {
+              "description": "REST VAT3 Web Service Integration Guide",
+              "link": "vat3/REST VAT3 Web Service Integration Guide.pdf",
+              "type": "PDF",
+              "category": "VAT3",
+              "environment": "Live",
+              "dateLastUpdated": "23/04/2026"
+            }
+          ],
+          "subDropdowns": [
+            {
+              "title": "Requests & Responses",
+              "cards": [
+                {
+                  "description": "Sample POST Request - Sample String",
+                  "link": "vat3/request-responses/Sample POST Request Sample String",
+                  "type": "XML",
+                  "category": "VAT3",
+                  "environment": "Test & Live",
+                  "dateLastUpdated": "23/04/2026"
+                },
+                {
+                  "description": "Sample Request - Full Signature Header",
+                  "link": "vat3/request-responses/SampleRequest_full_Signature_header.xml",
+                  "type": "XML",
+                  "category": "VAT3",
+                  "environment": "Test & Live",
+                  "dateLastUpdated": "23/04/2026"
+                },
+                {
+                  "description": "200 Response",
+                  "link": "vat3/request-responses/200Response",
+                  "type": "XML",
+                  "category": "VAT3",
+                  "environment": "Test & Live",
+                  "dateLastUpdated": "23/04/2026"
+                },
+                {
+                  "description": "400 Response",
+                  "link": "vat3/request-responses/400Response",
+                  "type": "XML",
+                  "category": "VAT3",
+                  "environment": "Test & Live",
+                  "dateLastUpdated": "23/04/2026"
+                },
+                {
+                  "description": "401 Response",
+                  "link": "vat3/request-responses/401Response",
+                  "type": "XML",
+                  "category": "VAT3",
+                  "environment": "Test & Live",
+                  "dateLastUpdated": "23/04/2026"
+                },
+                {
+                  "description": "403 Response",
+                  "link": "vat3/request-responses/403Response",
+                  "type": "XML",
+                  "category": "VAT3",
+                  "environment": "Test & Live",
+                  "dateLastUpdated": "23/04/2026"
+                },
+                {
+                  "description": "500 Response",
+                  "link": "vat3/request-responses/500Response",
+                  "type": "XML",
+                  "category": "VAT3",
+                  "environment": "Test & Live",
+                  "dateLastUpdated": "23/04/2026"
+                }
+              ]
+            }
+          ]
+        }
 }

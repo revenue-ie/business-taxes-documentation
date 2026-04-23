@@ -77,3 +77,60 @@
 
         }
 
+        /* ── Sub-Dropdown (Requests & Responses inside VAT3) ────────────────── */
+
+        .sub-dropdown {
+            box-sizing: border-box;
+            position: relative;
+            margin-top: 1rem;
+        }
+
+        .sub-dropdown-toggle {
+            background: #3a8a8e; /* Lighter teal to distinguish from outer dropdown */
+            border: none;
+            cursor: pointer;
+            padding: 9px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border-radius: 20px;
+            font-family: "Fira Sans", sans-serif;
+            font-weight: 600;
+            color: white;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 8px;
+            z-index: 3500;
+        }
+
+        .sub-dropdown-toggle:hover {
+            background: #2e7174;
+        }
+
+        /* Initial state — chevron down */
+        .sub-dropdown .sub-dropdown-icon::before {
+            font-family: FontAwesome;
+            content: "\f107";
+            font-size: 0.8em;
+            margin-right: 5px;
+        }
+
+        /* Active state — chevron up */
+        .sub-dropdown.active .sub-dropdown-icon::before {
+            content: none;
+        }
+
+        .sub-dropdown.active .sub-dropdown-icon::after {
+            font-family: FontAwesome;
+            content: "\f106";
+            font-size: 0.8em;
+            margin-right: 5px;
+        }
+
+        .sub-dropdown-content {
+            background-color: #eef5f5; /* Slightly tinted to distinguish from outer panel */
+            border-left: 3px solid #025e63;
+            padding: 0.5rem 1rem 1rem 1rem;
+            margin-left: 1rem;
+            box-shadow: inset 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
+        }
