@@ -1601,7 +1601,7 @@
               "description": "VAT3 Schema Notes",
               "link": "vat3/VAT3-Schema-Notes.pdf",
               "type": "PDF",
-              "category": "VAT3",
+              "category": "download",
               "environment": "Live",
               "dateLastUpdated": "23/04/2026"
             },
@@ -1609,7 +1609,7 @@
               "description": "VAT3 Return Rules",
               "link": "vat3/VAT3-Return-Rules.pdf",
               "type": "PDF",
-              "category": "VAT3",
+              "category": "download",
               "environment": "Live",
               "dateLastUpdated": "23/04/2026"
             },
@@ -1617,7 +1617,7 @@
               "description": "VAT3 Webservice Error Structure Guide",
               "link": "vat3/VAT3-Webservice-Error-Structure-Guide.pdf",
               "type": "PDF",
-              "category": "VAT3",
+              "category": "download",
               "environment": "Live",
               "dateLastUpdated": "23/04/2026"
             },
@@ -1625,7 +1625,7 @@
               "description": "REST VAT3 Web Service Integration Guide",
               "link": "vat3/REST-VAT3-Web-Service-Integration-Guide.pdf",
               "type": "PDF",
-              "category": "VAT3",
+              "category": "download",
               "environment": "Live",
               "dateLastUpdated": "23/04/2026"
             }
@@ -1638,7 +1638,7 @@
                   "description": "Sample POST Request - Sample String",
                   "link": "vat3/request-responses/Sample-POST-Request-Sample-String.xml",
                   "type": "XML",
-                  "category": "VAT3",
+                  "category": "download",
                   "environment": "Test & Live",
                   "dateLastUpdated": "23/04/2026"
                 },
@@ -1646,7 +1646,7 @@
                   "description": "Sample Request - Full Signature Header",
                   "link": "vat3/request-responses/SampleRequest_full_Signature_header.xml",
                   "type": "XML",
-                  "category": "VAT3",
+                  "category": "download",
                   "environment": "Test & Live",
                   "dateLastUpdated": "23/04/2026"
                 },
@@ -1654,7 +1654,7 @@
                   "description": "200 Response",
                   "link": "vat3/request-responses/200Response.xml",
                   "type": "XML",
-                  "category": "VAT3",
+                  "category": "download",
                   "environment": "Test & Live",
                   "dateLastUpdated": "23/04/2026"
                 },
@@ -1662,7 +1662,7 @@
                   "description": "400 Response",
                   "link": "vat3/request-responses/400Response.xml",
                   "type": "XML",
-                  "category": "VAT3",
+                  "category": "download",
                   "environment": "Test & Live",
                   "dateLastUpdated": "23/04/2026"
                 },
@@ -1670,7 +1670,7 @@
                   "description": "401 Response",
                   "link": "vat3/request-responses/401Response.xml",
                   "type": "XML",
-                  "category": "VAT3",
+                  "category": "download",
                   "environment": "Test & Live",
                   "dateLastUpdated": "23/04/2026"
                 },
@@ -1678,7 +1678,7 @@
                   "description": "403 Response",
                   "link": "vat3/request-responses/403Response.xml",
                   "type": "XML",
-                  "category": "VAT3",
+                  "category": "download",
                   "environment": "Test & Live",
                   "dateLastUpdated": "23/04/2026"
                 },
@@ -1686,7 +1686,7 @@
                   "description": "500 Response",
                   "link": "vat3/request-responses/500Response.xml",
                   "type": "XML",
-                  "category": "VAT3",
+                  "category": "download",
                   "environment": "Test & Live",
                   "dateLastUpdated": "23/04/2026"
                 }
