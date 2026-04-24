@@ -1,5 +1,0 @@
-(request-target): post /vat3-webservice-v1/file
-host: localhost:8000
-x-date: Mon, 30 Mar 2026 14:29:47 GMT
-digest: 0eC+Qq4RwqHftEy0hCfYUYqdj5K6hJmRiY0c47kWKcmJ1M/Hz2H0sSoiQy14CYN9sPSd4RbkWPQHBnjlJnyB8w==
-content-type: application/xml
