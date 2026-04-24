@@ -1599,7 +1599,7 @@
           "cards": [
             {
               "description": "VAT3 Schema Notes",
-              "link": "vat3/VAT3-Schema-Notes.pdf",
+              "link": "vat3/pdf/VAT3-Schema-Notes.pdf",
               "type": "PDF",
               "category": "download",
               "environment": "Live",
@@ -1607,7 +1607,7 @@
             },
             {
               "description": "VAT3 Return Rules",
-              "link": "vat3/VAT3-Return-Rules.pdf",
+              "link": "vat3/pdf/VAT3-Return-Rules.pdf",
               "type": "PDF",
               "category": "download",
               "environment": "Live",
@@ -1615,7 +1615,7 @@
             },
             {
               "description": "VAT3 Webservice Error Structure Guide",
-              "link": "vat3/VAT3-Webservice-Error-Structure-Guide.pdf",
+              "link": "vat3/pdf/VAT3-Webservice-Error-Structure-Guide.pdf",
               "type": "PDF",
               "category": "download",
               "environment": "Live",
@@ -1623,7 +1623,7 @@
             },
             {
               "description": "REST VAT3 Web Service Integration Guide",
-              "link": "vat3/REST-VAT3-Web-Service-Integration-Guide.pdf",
+              "link": "vat3/pdf/REST-VAT3-Web-Service-Integration-Guide.pdf",
               "type": "PDF",
               "category": "download",
               "environment": "Live",
