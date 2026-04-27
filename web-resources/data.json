@@ -1631,7 +1631,7 @@
             },
             {
               "description": "Sample POST Request - Sample String",
-              "link": "vat3/request-responses/Sample-POST-Request-Sample-String.xml",
+              "link": "vat3/request-responses/Sample-POST-Request-Sample-String.txt",
               "type": "XML",
               "category": "download",
               "environment": "Test & Live",
@@ -1639,7 +1639,7 @@
             },
             {
               "description": "Sample Request - Full Signature Header",
-              "link": "vat3/request-responses/SampleRequest_full_Signature_header.xml",
+              "link": "vat3/request-responses/SampleRequest_full_Signature_header.txt",
               "type": "XML",
               "category": "download",
               "environment": "Test & Live",
@@ -1647,7 +1647,7 @@
             },
             {
               "description": "200 Response",
-              "link": "vat3/request-responses/200Response.xml",
+              "link": "vat3/request-responses/200Response.txt",
               "type": "XML",
               "category": "download",
               "environment": "Test & Live",
@@ -1655,7 +1655,7 @@
             },
             {
               "description": "400 Response",
-              "link": "vat3/request-responses/400Response.xml",
+              "link": "vat3/request-responses/400Response.txt",
               "type": "XML",
               "category": "download",
               "environment": "Test & Live",
@@ -1663,7 +1663,7 @@
             },
             {
               "description": "401 Response",
-              "link": "vat3/request-responses/401Response.xml",
+              "link": "vat3/request-responses/401Response.txt",
               "type": "XML",
               "category": "download",
               "environment": "Test & Live",
@@ -1671,7 +1671,7 @@
             },
             {
               "description": "403 Response",
-              "link": "vat3/request-responses/403Response.xml",
+              "link": "vat3/request-responses/403Response.txt",
               "type": "XML",
               "category": "download",
               "environment": "Test & Live",
@@ -1679,7 +1679,7 @@
             },
             {
               "description": "500 Response",
-              "link": "vat3/request-responses/500Response.xml",
+              "link": "vat3/request-responses/500Response.txt",
               "type": "XML",
               "category": "download",
               "environment": "Test & Live",

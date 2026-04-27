@@ -1,0 +1,58 @@
+curl "http://localhost:8000/vat3-webservice-v1/file" 
+  -H "Accept: */*" 
+  -H "Accept-Language: en-GB,en-US;q=0.9,en;q=0.8" 
+  -H "Connection: keep-alive" 
+  -H "Content-Type: application/xml" 
+  -H "Digest: v2o8PKzI1FMOjGY5KGxfQMWwtI07KIM6R1NRZ4qQCB04YZj8FFoPaOt+xSCb3SwduYSr7rf6amjqsamMH3VSYA==" 
+  -H "Sec-Fetch-Dest: empty" 
+  -H "Sec-Fetch-Mode: cors" 
+  -H "Sec-Fetch-Site: cross-site" 
+  -H "Signature: keyId="MIIFizCCA3OgAwIBAgIUAcq4z2zDrPJxX/710lQ06HsET8cwDQYJKoZIhvcNAQELBQAwfTELMAkGA1UEBhMCSUUxHjAcBgNVBAoMFVJldmVudWUgQ29tbWlzc2lvbmVyczEgMB4GA1UECwwXUmV2ZW51ZSBPbi1MaW5lIFNlcnZpY2UxLDAqBgNVBAMMI1JPUyBDQSAyMDMwIC0gRk9SIFRFU1QgUFVSUE9TRSBPTkxZMB4XDTI2MDIyMzE2MTMwMloXDTI4MDIyMzE2MTMwMlowUDELMAkGA1UEBhMCSUUxFDASBgNVBAoMC1JVVEggTVVSUEhZMRMwEQYDVQQLDAoxMDI3MjMwMDQwMRYwFAYDVQQDDA1BRE1JTklTVFJBVE9SMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2yBd2Q9WecOiDygR+I37i+c7u2kwPa+oyzvpiEVaWUgDaDr6Azfj21ZYwJLwyOE8SDh/WLUgSqtuBoDv4QdwP7lWtRhu2/6NeMhLikEPlC/NdKiyCnJb8g8gdcpjxHdKAjMKQNWoMUYDsEt8qmLYLpjewZvhrno5bBdSCjB5bFuNIuRrkW9E31akchGBGZpmTxC/ahUY3J2yonkMdsQHb818EUQXP7g+6VyZ0Edoi6uX6BaKjd28UQuvTNOccY1EJcQKQ7rxfRa+UeYF3UxBQwifhiyLl50ANM7AIxKZKNmjpZ+mUwKsJLRyAcs8k17FUJkj8LSTQFoZKQH70f1jrwIDAQABo4IBLjCCASowHQYDVR0OBBYEFCvguMUfvVELYEvi/7axzg9d/DTjMB8GA1UdIwQYMBaAFL/5pyy+77H2K8Di1Nj8uqi6xwL6MAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQDAgeAMD8GA1UdHwQ4MDYwNKAyoDCGLmh0dHA6Ly9zb2Z0d2FyZXRlc3Qucm9zLmllL3BraS9yb3NfY2FfdGVzdC5jcmwwPQYDVR0gBDYwNDAyBgsqgnS76CMBAQEBBDAjMCEGCCsGAQUFBwIBFhVodHRwOi8vd3d3LnJldmVudWUuaWUwSgYIKwYBBQUHAQEEPjA8MDoGCCsGAQUFBzAChi5odHRwOi8vc29mdHdhcmV0ZXN0LnJvcy5pZS9wa2kvcm9zX2NhX3Rlc3QucDdiMA0GCSqGSIb3DQEBCwUAA4ICAQByDZ2PJlj7viAqn1t2vdfbuI2wAJdVFfk0s3b7dG/Djzf2sHsWYg98eSYhMsVA0P3QZeO0BoCbI4tpx5/9w5iERkd+oUxMyV4l0GpkX3c4EPLpVl0gvYx5gwJzSSJEx9LjdGsyhRu3Mw0LynArAk/xM+jIFdsatuV2QOI83CgjJUQ/29qLybesGx2J4Kis09B0LnS5/Xx2M0gdl5kIQNYY/IUmjWntNs4xkIdiO/ed3qGZnVuxJEBbCDN0Gn1373ERhQrrvRSwlYRNTpr0+tws26futo0Ehf175XFdYLQ6R5JI74cI9+gl8nV4PXU3J3CXIqhQ1DgzO3qPaS5yI6LM7VELyxT34VqO4F+TK9K2rXxLhLuHhPLr6BSzlhNAvocJavhfORyTKc66vnJ/tui96c/bdOUClQNl9MUlamLe5Rqcp6/dMnUMUxizfyai0tr9zSyut6EoP/nxNL8nrl8Vfz+s6H/AB7Uyir8jCRhl50+z75XLleVqOZY7DfDr5yAByTKEb68EwYsPHhO3GfhIiZ6zlTaXmDURWA2LGwRtFfofTHb/5OLHmulK8j2sea6RPuO5ze7IvK3xDjhqDyqDiWEAKZmnE4cVRB83CK6jnq0l2JSK0MjIkGQ94/Aps+Ya5ncGB866h79zhe60LBZDIgGMjEolx3OnYQpECS7+TA==",algorithm="rsa-sha512",headers="(request-target) host x-date digest content-type",signature="vOgrTqx2NBJrMRjRYgdq13E/O9Zg9FHVFWHqMF5q2J2lcIVWZSUc4GsLDkvmDmBQ2W7y8/Rlvsdld3H24twuN40PKOu9TuvlHoL2fIjy1rtK6gl79rRtj6vNtfW0mJkMwIBJenEyBXj+LSvsID41/BLhxxBvCizA9Sitsp+akodYMMJ4Aei27WUfkmzKZ1wJ/+KcBZzt3PK+Y4RjStpTTmm+TMu9lm/E6Lzo6m8s6oRAfNvMpz5nasZYs4wqgCPMFVU/MoFXg9Zcvp0AcDs7azuJzMBthJQw7gfoPGu6ezhJ0xrfsE9HWL0YnjsUk5qjfC697ipp+hEXsOmySC3J8g=="" 
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" 
+  -H "X-Date: Wed, 25 Mar 2026 13:59:12 GMT" 
+  -H "sec-ch-ua: "Chromium";v="146", "Not-A.Brand";v="24", "Google Chrome";v="146"" 
+  -H "sec-ch-ua-mobile: ?0" 
+  -H "sec-ch-ua-platform: "Windows"" 
+  --data-raw "<?xml version="1.0" encoding="UTF-8"?>
+
+<VAT3 xmlns="http://www.ros.ie/schemas/vat3/v1.5/"
+
+      currency="E"
+
+      name="VAT Tax Payer"
+
+      regnum="9567323DA"
+
+      startdate="01/03/2026"
+
+      enddate="30/04/2026"
+
+      sales="4000"
+
+      purchs="8000"
+
+      goodsto="2000"
+
+      goodsfrom="1000"
+
+      servicesto="5000"
+
+      servicesfrom="3000"
+
+      type="0"
+
+      filefreq="0"
+
+      formversion="1"
+
+      language="E"
+
+      postponedAccounting="2400"
+
+      unusualExpenditure="Y"
+
+      unusualExpenditureAmt="4000"
+
+      unusualExpenditureDtl="Unusual Expenditure TEST"
+
+/>"
