@@ -1632,7 +1632,7 @@
             {
               "description": "Sample POST Request - Sample String",
               "link": "vat3/request-responses/Sample-POST-Request-Sample-String.txt",
-              "type": "XML",
+              "type": "Text",
               "category": "download",
               "environment": "Test & Live",
               "dateLastUpdated": "23/04/2026"
@@ -1640,7 +1640,7 @@
             {
               "description": "Sample Request - Full Signature Header",
               "link": "vat3/request-responses/SampleRequest_full_Signature_header.txt",
-              "type": "XML",
+              "type": "Text",
               "category": "download",
               "environment": "Test & Live",
               "dateLastUpdated": "23/04/2026"
@@ -1648,7 +1648,7 @@
             {
               "description": "200 Response",
               "link": "vat3/request-responses/200Response.txt",
-              "type": "XML",
+              "type": "Text",
               "category": "download",
               "environment": "Test & Live",
               "dateLastUpdated": "23/04/2026"
@@ -1656,7 +1656,7 @@
             {
               "description": "400 Response",
               "link": "vat3/request-responses/400Response.txt",
-              "type": "XML",
+              "type": "Text",
               "category": "download",
               "environment": "Test & Live",
               "dateLastUpdated": "23/04/2026"
@@ -1664,7 +1664,7 @@
             {
               "description": "401 Response",
               "link": "vat3/request-responses/401Response.txt",
-              "type": "XML",
+              "type": "Text",
               "category": "download",
               "environment": "Test & Live",
               "dateLastUpdated": "23/04/2026"
@@ -1672,7 +1672,7 @@
             {
               "description": "403 Response",
               "link": "vat3/request-responses/403Response.txt",
-              "type": "XML",
+              "type": "Text",
               "category": "download",
               "environment": "Test & Live",
               "dateLastUpdated": "23/04/2026"
@@ -1680,7 +1680,7 @@
             {
               "description": "500 Response",
               "link": "vat3/request-responses/500Response.txt",
-              "type": "XML",
+              "type": "Text",
               "category": "download",
               "environment": "Test & Live",
               "dateLastUpdated": "23/04/2026"
