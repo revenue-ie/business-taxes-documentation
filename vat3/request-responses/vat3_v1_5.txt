@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:ros="http://www.ros.ie/schemas/rostypes/" xmlns="http://www.ros.ie/schemas/vat3/v1.5/"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.ros.ie/schemas/vat3/v1.5/"
+            elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xsd:import namespace="http://www.ros.ie/schemas/rostypes/" schemaLocation="ros_types.xsd"/>
+
+    <xsd:element name="VAT3">
+        <xsd:complexType>
+            <xsd:attribute name="currency" use="required">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:length value="1"/>
+                        <xsd:enumeration value="E"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+
+            <xsd:attribute name="name" use="required">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:minLength value="1"/>
+                        <xsd:maxLength value="30"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+
+            <xsd:attribute name="regnum" use="required">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:pattern value="[0-9]{7}[A-Z]{1,2}"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+
+            <xsd:attribute name="startdate" use="required">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:pattern value="\d{2}/\d{2}/\d{4}"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+
+            <xsd:attribute name="enddate" use="required">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:pattern value="\d{2}/\d{2}/\d{4}"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+
+            <xsd:attribute name="sales" type="AmountType" use="required"/>
+            <xsd:attribute name="purchs" type="AmountType" use="required"/>
+            <xsd:attribute name="goodsto" type="AmountType" use="required"/>
+            <xsd:attribute name="goodsfrom" type="AmountType" use="required"/>
+            <xsd:attribute name="servicesto" type="LargeAmountType" use="required"/>
+            <xsd:attribute name="servicesfrom" type="AmountType" use="required"/>
+
+            <xsd:attribute name="type" use="required">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:integer">
+                        <xsd:minInclusive value="0"/>
+                        <xsd:maxInclusive value="2"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+
+            <xsd:attribute name="filefreq" use="required">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:integer">
+                        <xsd:minInclusive value="0"/>
+                        <xsd:maxInclusive value="3"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+
+            <xsd:attribute name="formversion" use="required">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:integer">
+                        <xsd:enumeration value="1"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+
+            <xsd:attribute name="language" use="required">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:length value="1"/>
+                        <xsd:enumeration value="E"/>
+                        <xsd:enumeration value="G"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+
+            <xsd:attribute name="postponedAccounting" type="LargeAmountType" use="required"/>
+
+            <xsd:attribute name="unusualExpenditure" use="optional">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:length value="1"/>
+                        <xsd:enumeration value="Y"/>
+                        <xsd:enumeration value="N"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+
+            <xsd:attribute name="unusualExpenditureAmt" type="AmountType" use="optional"/>
+
+            <xsd:attribute name="unusualExpenditureDtl" use="optional">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="50"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:simpleType name="AmountType">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="0"/>
+            <xsd:maxInclusive value="999999999"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="LargeAmountType">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="0"/>
+            <xsd:maxInclusive value="9999999999"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>

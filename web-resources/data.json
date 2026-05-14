@@ -1611,7 +1611,7 @@
               "type": "PDF",
               "category": "download",
               "environment": "Live",
-              "dateLastUpdated": "23/04/2026"
+              "dateLastUpdated": "14/05/2026"
             },
             {
               "description": "VAT3 Webservice Error Structure Guide",
@@ -1619,7 +1619,7 @@
               "type": "PDF",
               "category": "download",
               "environment": "Live",
-              "dateLastUpdated": "23/04/2026"
+              "dateLastUpdated": "14/05/2026"
             },
             {
               "description": "REST VAT3 Web Service Integration Guide",
@@ -1627,7 +1627,7 @@
               "type": "PDF",
               "category": "download",
               "environment": "Live",
-              "dateLastUpdated": "23/04/2026"
+              "dateLastUpdated": "14/05/2026"
             },
             {
               "description": "Sample POST Request - Sample String",
@@ -1677,14 +1677,23 @@
               "environment": "Test & Live",
               "dateLastUpdated": "23/04/2026"
             },
-            {
+              {
               "description": "500 Response",
               "link": "vat3/request-responses/500Response.txt",
               "type": "Text",
               "category": "download",
               "environment": "Test & Live",
               "dateLastUpdated": "23/04/2026"
+            },
+            {
+              "description": "VAT3 v1.5",
+              "link": "vat3/request-responses/vat3_v1_5.txt",
+              "type": "XML",
+              "category": "download",
+              "environment": "Test & Live",
+              "dateLastUpdated": "14/05/2026"
             }
           ]
         }
 }
+
