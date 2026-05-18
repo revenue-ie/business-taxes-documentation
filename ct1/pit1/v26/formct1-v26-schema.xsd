@@ -48,7 +48,43 @@ v - ForeignIncome
 
 vi - FilmCorporationTaxCredit
 	[Added New section:Interim Unscripted Corporation Tax ]
+	[New attributes]
+	@qualifyingProgrammeTitle
+	@interimCertificateNumber
+	@interimCertificateDate
+	@expenditurePeriodStartDate
+	@expenditurePeriodEndDate
+	@qualifyingExpenditure
+	@totalCostOfProduction
+	@expenditureOnEmployment
+	@expenditureOnGoods
+	@totalEligibleExpenditure
+	@interimTaxCreditClaimed
+	@overpaymentTreatmentIndicator
+	@overpaymentAmount
+	@overpaymentOffsetAmount
+	@directPaymentIndicator
+	@directPaymentAmount
 	[Added New section:Final Unscripted Corporation Tax ]
+	[New attributes]
+	@qualifyingProgrammeTitle
+	@finalCertificateNumber
+	@finalCertificateDate
+	@expenditurePeriodStartDate
+	@expenditurePeriodEndDate
+	@completionDate
+	@qualifyingExpenditure
+	@totalCostOfProduction
+	@expenditureOnEmployment
+	@expenditureOnGoods
+	@totalEligibleExpenditure
+	@interimTaxCreditClaimedPreviousYears
+	@finalTaxCreditClaimed
+	@overpaymentTreatmentIndicator
+	@overpaymentAmount
+	@overpaymentOffsetAmount
+	@directPaymentIndicator
+	@directPaymentAmount
 	[New Attributes in Film Details]
 	@vfxEnhancedCredit
 	@vfxMinExpenditureDeclaration
@@ -127,7 +163,6 @@ xiii - CompanyDetails
 	@countryOfResidenceAddress
 	@countryOfResidenceCompanyName
 	@countryOfResidenceTaxID
-	@relevantMigrationCountry
 
 xiv - CompanyDetails/GroupForIrishTaxPurposes/AddDetailsClaimedLoss
 	[added attribute]
