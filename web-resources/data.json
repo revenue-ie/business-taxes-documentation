@@ -6,7 +6,7 @@
 		"cards": [
             {
               "link": "ct1/pit1/v26/formct1-v26-schema.xsd",
-              "description": "CT1 Schema v26– (Currently In Development)",
+              "description": "CT1 Schema v26",
               "anchor": "CT1_Schema_v26",
               "type": "Schema",
               "environment": "Tax periods ending in 2026",
@@ -15,7 +15,7 @@
             },
             {
               "link": "ct1/pit1/v26/ct1v26notes.pdf",
-              "description": "CT1 Notes v26- (Currently In Development)",
+              "description": "CT1 Notes v26",
               "anchor": "CT1_Notes_v26",
               "type": "PDF",
               "environment": "Tax periods ending in 2026",
@@ -444,7 +444,7 @@
 		"cards": [
           {
             "link": "form11/pit1/v26/form11-v26-schema.xsd",
-            "description": "Form11 Schema v26– (Currently In Development)",
+            "description": "Form11 Schema v26",
             "anchor": "Form11_Schema_v26",
             "type": "Schema",
             "environment": "Tax periods ending in 2025",
@@ -453,7 +453,7 @@
           },
           {
             "link": "form11/pit1/v26/form11v26notes.pdf",
-            "description": "Form11 Notes v26- (Currently in Development)",
+            "description": "Form11 Notes v26",
             "anchor": "Form11_Notes_v26",
             "type": "PDF",
             "environment": "Tax periods ending in 2025",
