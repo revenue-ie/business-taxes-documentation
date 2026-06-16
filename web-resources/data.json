@@ -2,7 +2,7 @@
 	"CT1": {
 		"title": "CT1 - Schema & Notes",
 		"anchor": "PIT",
-		"cardText": "<p>This section provides documentation which advises users on the available schema & notes for each available version of CT1. In order to aid third party development and integration work, we have made a provisional XML schema available for the CT1 2026 marked with (“Currently In Development”). Please be advised that this schema is currently in development and is intended for initial guidance and testing purposes only. As the schema is not yet final, its structure and elements are subject to change prior to the official release.",
+		"cardText": "<p>This section provides documentation which advises users on the available schema & notes for each available version of CT1.",
 		"cards": [
             {
               "link": "ct1/pit1/v26/formct1-v26-schema.xsd",
@@ -440,7 +440,7 @@
 	"Form11": {
 		"title": "Form11 - Schema & Notes",
 		"anchor": "PIT",
-		"cardText": "<p>This section provides documentation which advises users on the available schema & notes for each available version of Form11. In order to aid third party development and integration work, we have made a provisional XML schema available for the Form 11 2025 marked with (“Currently In Development”). Please be advised that this schema is currently in development and is intended for initial guidance and testing purposes only. As the schema is not yet final, its structure and elements are subject to change prior to the official release.",
+		"cardText": "<p>This section provides documentation which advises users on the available schema & notes for each available version of Form11.",
 		"cards": [
           {
             "link": "form11/pit1/v26/form11-v26-schema.xsd",
@@ -457,7 +457,7 @@
             "anchor": "Form11_Notes_v26",
             "type": "PDF",
             "environment": "Tax periods ending in 2025",
-            "dateLastUpdated": "16/04/2026",
+            "dateLastUpdated": "16/06/2026",
             "category": "download"
           },
           {
@@ -1246,7 +1246,7 @@
 	"Form1-Trusts & Estates": {
 		"title": "Form1-Trusts & Estates - Schema & Notes",
 		"anchor": "PIT",
-		"cardText": "<p>This section provides documentation which advises users on the available schema & notes for each available version of Form1. In order to aid third party development and integration work, we have made a provisional XML schema available for the Form 1 2025 marked with (“Currently In Development”). Please be advised that this schema is currently in development and is intended for initial guidance and testing purposes only. As the schema is not yet final, its structure and elements are subject to change prior to the official release.",
+		"cardText": "<p>This section provides documentation which advises users on the available schema & notes for each available version of Form1-Trusts & Estates.",
 		"cards": [
             {
               "link": "form1/pit1/v19/form1-v19-schema.xsd",
