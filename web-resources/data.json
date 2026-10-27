@@ -1603,7 +1603,7 @@
               "type": "PDF",
               "category": "download",
               "environment": "Live",
-              "dateLastUpdated": "23/04/2026"
+              "dateLastUpdated": "27/10/2026"
             },
             {
               "description": "VAT3 Return Rules",
@@ -1619,7 +1619,7 @@
               "type": "PDF",
               "category": "download",
               "environment": "Live",
-              "dateLastUpdated": "14/05/2026"
+              "dateLastUpdated": "27/10/2026"
             },
             {
               "description": "REST VAT3 Web Service Integration Guide",
@@ -1627,7 +1627,7 @@
               "type": "PDF",
               "category": "download",
               "environment": "Live",
-              "dateLastUpdated": "27/07/2026"
+              "dateLastUpdated": "27/10/2026"
             },
             {
               "description": "Sample POST Request - Sample String",
@@ -1691,7 +1691,7 @@
               "type": "XML",
               "category": "download",
               "environment": "Test & Live",
-              "dateLastUpdated": "14/05/2026"
+              "dateLastUpdated": "27/10/2026"
             }
           ]
         }
